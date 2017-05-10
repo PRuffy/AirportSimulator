@@ -1,0 +1,10 @@
+/** 
+ * 
+ */
+package environment
+/** 
+ * @author stay
+ * 
+ */
+class Tree<T extends ShapedObject>{
+}
