@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_kmJNEDycEeeO64MiTnWR6Q" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_kmJNETycEeeO64MiTnWR6Q" bindingContexts="_kmLphDycEeeO64MiTnWR6Q">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;FrustumIterator.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/FrustumIterator.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/FrustumIterator.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;GraphEdge.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/GraphEdge.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/GraphEdge.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;QuadTree.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/QuadTree.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/QuadTree.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;GraphNode.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/GraphNode.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/GraphNode.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;QuadTreeNode.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/QuadTreeNode.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/QuadTreeNode.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;SpawnMapping.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/SpawnMapping.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/util/SpawnMapping.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;ResourceWrapper.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/ResourceWrapper.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/util/ResourceWrapper.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;Resources.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/Resources.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/util/Resources.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;LocaleMessageFormat.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/LocaleMessageFormat.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/util/LocaleMessageFormat.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;CollectionUtil.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/CollectionUtil.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/util/CollectionUtil.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;AddressUUIDScope.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/AddressUUIDScope.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/util/AddressUUIDScope.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;LocalizedString.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/LocalizedString.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/util/LocalizedString.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;AbstractSituatedObject.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/AbstractSituatedObject.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/AbstractSituatedObject.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;SituatedObject.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/SituatedObject.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/SituatedObject.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;EnvObject.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/EnvObject.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/EnvObject.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;SpawnMapping.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/SpawnMapping.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/util/SpawnMapping.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;AbstractEnvironment.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/AbstractEnvironment.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/AbstractEnvironment.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;GraphEdge.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/GraphEdge.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/GraphEdge.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;sarl_environment.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/sarl_environment.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/sarl_environment.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;AgentBody.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/AgentBody.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/AgentBody.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;Body.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/Body.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/Body.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;EnvironmentListener.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/EnvironmentListener.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/EnvironmentListener.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;EnvironmentEvent.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/EnvironmentEvent.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/EnvironmentEvent.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;MotionInfluence.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/MotionInfluence.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/MotionInfluence.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;KillInfluence.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/KillInfluence.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/KillInfluence.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;Influence.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/Influence.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/Influence.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;Percept.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/Percept.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/Percept.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;sarl_events.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/sarl_events.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/sarl_events.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;SpatialDataStructure.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/SpatialDataStructure.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/SpatialDataStructure.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;io.sarl.lang.SARL&quot; name=&quot;WorldModelState.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/WorldModelState.sarl&quot;>&#xA;&lt;persistable path=&quot;/AirportSimulator/src/main/sarl/framework/environment/WorldModelState.sarl&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_kmJNETycEeeO64MiTnWR6Q" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_kmJ0IDycEeeO64MiTnWR6Q" x="0" y="25" width="1602" height="876">
@@ -123,255 +123,9 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_kmJ1XTycEeeO64MiTnWR6Q" elementId="org.eclipse.ui.editorss" selectedElement="_kmJ1XjycEeeO64MiTnWR6Q">
-      <children xsi:type="basic:PartStack" xmi:id="_kmJ1XjycEeeO64MiTnWR6Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_C_7h0D1UEeeQud8pmeFqmw">
+      <children xsi:type="basic:PartStack" xmi:id="_kmJ1XjycEeeO64MiTnWR6Q" elementId="org.eclipse.e4.primaryDataStack">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <children xsi:type="basic:Part" xmi:id="_kmJ1ZDycEeeO64MiTnWR6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="EnvObject.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;EnvObject.sarl&quot; partName=&quot;EnvObject.sarl&quot; title=&quot;EnvObject.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/EnvObject.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/EnvObject.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;201&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1ZTycEeeO64MiTnWR6Q" elementId="#TextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextEditorContext</tags>
-            <tags>popup:io.sarl.lang.SARL.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1ZjycEeeO64MiTnWR6Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:io.sarl.lang.SARL.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1ZzycEeeO64MiTnWR6Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1aDycEeeO64MiTnWR6Q" elementId="#TextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextEditorContext</tags>
-            <tags>popup:io.sarl.lang.SARL.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1aTycEeeO64MiTnWR6Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:io.sarl.lang.SARL.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1ajycEeeO64MiTnWR6Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_kmJ1azycEeeO64MiTnWR6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="QuadTree.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;QuadTree.sarl&quot; partName=&quot;QuadTree.sarl&quot; title=&quot;QuadTree.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/QuadTree.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/QuadTree.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;565&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1bDycEeeO64MiTnWR6Q" elementId="#TextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextEditorContext</tags>
-            <tags>popup:io.sarl.lang.SARL.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1bTycEeeO64MiTnWR6Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:io.sarl.lang.SARL.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1bjycEeeO64MiTnWR6Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1bzycEeeO64MiTnWR6Q" elementId="#TextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextEditorContext</tags>
-            <tags>popup:io.sarl.lang.SARL.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1cDycEeeO64MiTnWR6Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:io.sarl.lang.SARL.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1cTycEeeO64MiTnWR6Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_kmJ1cjycEeeO64MiTnWR6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="QuadTreeNode.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;QuadTreeNode.sarl&quot; partName=&quot;QuadTreeNode.sarl&quot; title=&quot;QuadTreeNode.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/QuadTreeNode.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/QuadTreeNode.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1459&quot; selectionTopPixel=&quot;1112&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1czycEeeO64MiTnWR6Q" elementId="#TextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextEditorContext</tags>
-            <tags>popup:io.sarl.lang.SARL.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1dDycEeeO64MiTnWR6Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:io.sarl.lang.SARL.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1dTycEeeO64MiTnWR6Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmJ1djycEeeO64MiTnWR6Q" elementId="#TextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextEditorContext</tags>
-            <tags>popup:io.sarl.lang.SARL.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbMDycEeeO64MiTnWR6Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:io.sarl.lang.SARL.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbMTycEeeO64MiTnWR6Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_kmKbMjycEeeO64MiTnWR6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Graph.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;Graph.sarl&quot; partName=&quot;Graph.sarl&quot; title=&quot;Graph.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/Graph.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/Graph.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;86&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbMzycEeeO64MiTnWR6Q" elementId="#TextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextEditorContext</tags>
-            <tags>popup:io.sarl.lang.SARL.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbNDycEeeO64MiTnWR6Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:io.sarl.lang.SARL.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbNTycEeeO64MiTnWR6Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_kmKbNjycEeeO64MiTnWR6Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="GraphNode.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;GraphNode.sarl&quot; partName=&quot;GraphNode.sarl&quot; title=&quot;GraphNode.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/GraphNode.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/GraphNode.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;152&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbNzycEeeO64MiTnWR6Q" elementId="#TextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextEditorContext</tags>
-            <tags>popup:io.sarl.lang.SARL.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbODycEeeO64MiTnWR6Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:io.sarl.lang.SARL.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbOTycEeeO64MiTnWR6Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbOjycEeeO64MiTnWR6Q" elementId="#TextEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextEditorContext</tags>
-            <tags>popup:io.sarl.lang.SARL.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbUjycEeeO64MiTnWR6Q" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:io.sarl.lang.SARL.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_kmKbUzycEeeO64MiTnWR6Q" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_C_7h0D1UEeeQud8pmeFqmw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="FrustumIterator.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;FrustumIterator.sarl&quot; partName=&quot;FrustumIterator.sarl&quot; title=&quot;FrustumIterator.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/FrustumIterator.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/FrustumIterator.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;703&quot; selectionTopPixel=&quot;316&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_6FHbkD1WEeeQud8pmeFqmw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Frustum.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;Frustum.sarl&quot; partName=&quot;Frustum.sarl&quot; title=&quot;Frustum.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/Frustum.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/Frustum.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2097&quot; selectionTopPixel=&quot;421&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_GgFugD1XEeeQud8pmeFqmw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SituatedObject.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;SituatedObject.sarl&quot; partName=&quot;SituatedObject.sarl&quot; title=&quot;SituatedObject.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/SituatedObject.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/SituatedObject.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1425&quot; selectionTopPixel=&quot;185&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_cW8GAD1XEeeQud8pmeFqmw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ShapedObject.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;ShapedObject.sarl&quot; partName=&quot;ShapedObject.sarl&quot; title=&quot;ShapedObject.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/ShapedObject.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/ShapedObject.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_xliNkD6-EeeupeTNpE4FDA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Shape2f.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;Shape2f.sarl&quot; partName=&quot;Shape2f.sarl&quot; title=&quot;Shape2f.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/math/Shape2f.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/math/Shape2f.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_QQ7j4D6_EeevyoMvYqC4-w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AbstractSituatedObject.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;AbstractSituatedObject.sarl&quot; partName=&quot;AbstractSituatedObject.sarl&quot; title=&quot;AbstractSituatedObject.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/AbstractSituatedObject.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/AbstractSituatedObject.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1123&quot; selectionTopPixel=&quot;194&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_hN9FsD6_EeevyoMvYqC4-w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AbstractMobileObject.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;AbstractMobileObject.sarl&quot; partName=&quot;AbstractMobileObject.sarl&quot; title=&quot;AbstractMobileObject.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/AbstractMobileObject.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/AbstractMobileObject.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;3825&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_zbZtkD6_EeevyoMvYqC4-w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LocalizedString.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;LocalizedString.sarl&quot; partName=&quot;LocalizedString.sarl&quot; title=&quot;LocalizedString.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/LocalizedString.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/util/LocalizedString.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5791&quot; selectionTopPixel=&quot;1875&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_KSJb0D7AEeevyoMvYqC4-w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Resources.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;Resources.sarl&quot; partName=&quot;Resources.sarl&quot; title=&quot;Resources.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/Resources.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/util/Resources.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;913&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_Lvh_0D7AEeevyoMvYqC4-w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ResourceWrapper.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;ResourceWrapper.sarl&quot; partName=&quot;ResourceWrapper.sarl&quot; title=&quot;ResourceWrapper.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/ResourceWrapper.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/util/ResourceWrapper.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;912&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_M5JTQD7AEeevyoMvYqC4-w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SpawnMapping.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;SpawnMapping.sarl&quot; partName=&quot;SpawnMapping.sarl&quot; title=&quot;SpawnMapping.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/util/SpawnMapping.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/util/SpawnMapping.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;912&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_lCwXkD7AEeevyoMvYqC4-w" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="GraphEdge.sarl" iconURI="platform:/plugin/io.sarl.lang.ui/icons/sarl-file.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;io.sarl.lang.SARL&quot; name=&quot;GraphEdge.sarl&quot; partName=&quot;GraphEdge.sarl&quot; title=&quot;GraphEdge.sarl&quot; tooltip=&quot;AirportSimulator/src/main/sarl/framework/environment/GraphEdge.sarl&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AirportSimulator/src/main/sarl/framework/environment/GraphEdge.sarl&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>io.sarl.lang.SARL</tags>
-          <tags>removeOnHide</tags>
-        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_kmKbcjycEeeO64MiTnWR6Q" elementId="io.sarl.eclipse.explorer.PackageExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="SARL Explorer" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/package.png" tooltip="" closeable="true">
@@ -565,7 +319,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kmKb6DycEeeO64MiTnWR6Q" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Lv_vUD6_EeevyoMvYqC4-w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_kmM48DycEeeO64MiTnWR6Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_dctZ8D7FEeeLKICB3khhJQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_kmM48DycEeeO64MiTnWR6Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kmKb9TycEeeO64MiTnWR6Q" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -586,7 +340,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kmKcKDycEeeO64MiTnWR6Q" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_LwEn0D6_EeevyoMvYqC4-w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_kmM4gjycEeeO64MiTnWR6Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_dcxrYD7FEeeLKICB3khhJQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_kmM4gjycEeeO64MiTnWR6Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_kmKcNTycEeeO64MiTnWR6Q" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
