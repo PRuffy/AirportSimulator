@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="New SARL Interface">
+		<item value="false" key="generate_event_handlers"/>
+		<item value="false" key="generate_lifecycle_functions"/>
+		<item value="false" key="create_constructor"/>
+		<item value="false" key="create_unimplemented"/>
+	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
 		<item value="true" key="group_libraries"/>

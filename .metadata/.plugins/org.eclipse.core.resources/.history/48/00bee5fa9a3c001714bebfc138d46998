@@ -1,0 +1,12 @@
+/** 
+ * 
+ */
+package framework.environment
+/** 
+ * @author stay
+ * 
+ */
+class GraphEdge {
+	val GraphNode departur eNode;
+	val GraphNode arrinvingNode;
+}

@@ -1,0 +1,32 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.Iterator
+import java.util.LinkedList
+import framework.math.Shape2f
+import java.util.Stack
+
+
+class FrustumIterator<T extends EnvObject> implements Iterator<T> {
+	val frustum : Shape2f<?>
+	var nextObject : T
+	val stack = new Stack<QuadTreeNode<T>>
+	val buffer = new LinkedList<T>
+	
+	override hasNext : boolean {
+		nextObject !== null
+	}
+	
+	override next : T {
+		var n = nextObject
+		searchNext
+		return n
+	}
+	
+	private def searchNext{
+		
+	}
+	
+}

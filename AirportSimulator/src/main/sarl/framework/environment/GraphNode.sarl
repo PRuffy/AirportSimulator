@@ -1,0 +1,13 @@
+/** 
+ * 
+ */
+package framework.environment
+/** 
+ * @author stay
+ * 
+ */
+class GraphNode {
+	var arrivingEdges :ArrayList<GraphEdge>;
+	var leavingEdges : ArrayList<GraphEdge>;
+	
+}

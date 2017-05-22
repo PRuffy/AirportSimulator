@@ -1,0 +1,15 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import framework.math.Shape2f
+
+/** 
+ * @author stay
+ * 
+ */
+abstract class EnvObject {
+	
+	var shape : Shape2f;
+}

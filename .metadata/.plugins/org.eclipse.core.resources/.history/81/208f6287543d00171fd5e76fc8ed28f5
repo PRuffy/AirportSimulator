@@ -1,0 +1,48 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.Iterator
+
+/** 
+ * @author stay
+ * 
+ */
+class FrustumIterator<T extends EnvObject> implements Iterator<T> {
+	
+	override hasNext : boolean {
+		nextObject !== null
+	}
+	
+	override next : T {
+		var n = nextObject
+		searchNext
+		return n
+	}
+
+	private def searchNext {
+		nextObject = null
+
+		while (buffer.empty && !stack.empty()) {
+			var node = stack.pop
+
+			if (frustum.intersects(node.box)) {
+				for (c : node.children) {
+					stack += c
+				}
+
+				for (o : node.objects) {
+					if (frustum.intersects(o.shape)) {
+						buffer += o
+					}
+				}
+			}
+		}
+
+		if (!buffer.empty) {
+			nextObject = buffer.removeFirst
+		}
+	}
+	
+}

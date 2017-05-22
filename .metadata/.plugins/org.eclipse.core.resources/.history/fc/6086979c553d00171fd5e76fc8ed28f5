@@ -1,0 +1,25 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.Iterator
+import java.util.LinkedList
+import framework.math.Shape2f
+import java.util.Stack
+
+
+class FrustumIterator<T extends EnvObject> implements Iterator<T> {
+	val frustum : Shape2f<?>
+	var nextObject : T
+	val stack = new Stack<QuadTreeNode<T>>
+	
+	override hasNext : boolean {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override next : T {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+}
