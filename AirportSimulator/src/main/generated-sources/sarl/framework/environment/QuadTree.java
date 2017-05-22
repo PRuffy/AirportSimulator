@@ -2,8 +2,8 @@ package framework.environment;
 
 import framework.environment.Frustum;
 import framework.environment.FrustumIterator;
+import framework.environment.QuadTreeNode;
 import framework.environment.ShapedObject;
-import framework.environment.TreeNode;
 import framework.math.Point2f;
 import framework.math.Rectangle2f;
 import framework.math.Shape2f;
@@ -17,16 +17,16 @@ import org.eclipse.xtext.xbase.lib.Pure;
 @SarlSpecification("0.5")
 @SarlElementType(8)
 @SuppressWarnings("all")
-public class Tree<T extends ShapedObject> {
-  private TreeNode<T> root;
+public class QuadTree<T extends ShapedObject> {
+  private QuadTreeNode<T> root;
   
-  public Tree(final Rectangle2f box) {
-    TreeNode<T> _treeNode = new TreeNode<T>(box);
-    this.root = _treeNode;
+  public QuadTree(final Rectangle2f box) {
+    QuadTreeNode<T> _quadTreeNode = new QuadTreeNode<T>(box);
+    this.root = _quadTreeNode;
   }
   
   @Pure
-  public TreeNode<T> getRoot() {
+  public QuadTreeNode<T> getRoot() {
     return this.root;
   }
   
@@ -35,7 +35,7 @@ public class Tree<T extends ShapedObject> {
     return new FrustumIterator<T>(this, geometricFrustum);
   }
   
-  public TreeNode<T> add(final T o) {
+  public QuadTreeNode<T> add(final T o) {
     return this.root.add(o);
   }
   

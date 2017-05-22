@@ -20,19 +20,19 @@ import org.eclipse.xtext.xbase.lib.Pure;
 @SarlSpecification("0.5")
 @SarlElementType(8)
 @SuppressWarnings("all")
-public class TreeNode<T extends ShapedObject> {
+public class QuadTreeNode<T extends ShapedObject> {
   private final Rectangle2f box;
   
   private LinkedList<T> objects;
   
-  private final WeakReference<TreeNode<T>> parent;
+  private final WeakReference<QuadTreeNode<T>> parent;
   
-  private List<TreeNode<T>> children;
+  private List<QuadTreeNode<T>> children;
   
   @DefaultValueSource
-  public TreeNode(@DefaultValue("framework.environment.TreeNode#NEW_0") final TreeNode parent, final Rectangle2f box) {
+  public QuadTreeNode(@DefaultValue("framework.environment.QuadTreeNode#NEW_0") final QuadTreeNode parent, final Rectangle2f box) {
     if ((parent != null)) {
-      WeakReference<TreeNode<T>> _weakReference = new WeakReference<TreeNode<T>>(parent);
+      WeakReference<QuadTreeNode<T>> _weakReference = new WeakReference<QuadTreeNode<T>>(parent);
       this.parent = _weakReference;
     } else {
       this.parent = null;
@@ -45,12 +45,12 @@ public class TreeNode<T extends ShapedObject> {
    */
   @SyntheticMember
   @SarlSourceCode("null")
-  private final static TreeNode $DEFAULT_VALUE$NEW_0 = null;
+  private final static QuadTreeNode $DEFAULT_VALUE$NEW_0 = null;
   
   @Pure
-  public TreeNode<T> getParent() {
-    WeakReference<TreeNode<T>> _parent = this.parent;
-    TreeNode<T> _get = null;
+  public QuadTreeNode<T> getParent() {
+    WeakReference<QuadTreeNode<T>> _parent = this.parent;
+    QuadTreeNode<T> _get = null;
     if (_parent!=null) {
       _get=_parent.get();
     }
@@ -68,13 +68,13 @@ public class TreeNode<T extends ShapedObject> {
   }
   
   @Pure
-  public List<TreeNode<T>> getChildren() {
+  public List<QuadTreeNode<T>> getChildren() {
     return this.children;
   }
   
-  public TreeNode<T> add(final T o) {
+  public QuadTreeNode<T> add(final T o) {
     if ((this.children == null)) {
-      TreeNode<T> n = null;
+      QuadTreeNode<T> n = null;
       int _size = this.objects.size();
       int _plus = (_size + 1);
       boolean _lessEqualsThan = (_plus <= 10);
@@ -88,7 +88,7 @@ public class TreeNode<T extends ShapedObject> {
         this.objects = _linkedList;
         for (final T obj : old) {
           {
-            TreeNode<T> x = this.pushInBranch(obj);
+            QuadTreeNode<T> x = this.pushInBranch(obj);
             if ((x == null)) {
               this.objects.add(obj);
             }
@@ -102,7 +102,7 @@ public class TreeNode<T extends ShapedObject> {
       }
       return n;
     } else {
-      TreeNode<T> n_1 = this.pushInBranch(o);
+      QuadTreeNode<T> n_1 = this.pushInBranch(o);
       if ((n_1 == null)) {
         this.objects.add(o);
         n_1 = this;
@@ -111,9 +111,9 @@ public class TreeNode<T extends ShapedObject> {
     }
   }
   
-  private TreeNode<T> pushInBranch(final T o) {
-    ArrayList<TreeNode<T>> ns = new ArrayList<TreeNode<T>>();
-    for (final TreeNode<T> c : this.children) {
+  private QuadTreeNode<T> pushInBranch(final T o) {
+    ArrayList<QuadTreeNode<T>> ns = new ArrayList<QuadTreeNode<T>>();
+    for (final QuadTreeNode<T> c : this.children) {
       boolean _intersects = o.getShape().intersects(c.box);
       if (_intersects) {
         ns.add(c);
@@ -128,13 +128,13 @@ public class TreeNode<T extends ShapedObject> {
   }
   
   private void createChildren() {
-    ArrayList<TreeNode<T>> _arrayList = new ArrayList<TreeNode<T>>(4);
+    ArrayList<QuadTreeNode<T>> _arrayList = new ArrayList<QuadTreeNode<T>>(4);
     this.children = _arrayList;
     IntegerRange _upTo = new IntegerRange(0, 3);
     for (final Integer i : _upTo) {
       Rectangle2f _computeChildBox = this.computeChildBox((i).intValue());
-      TreeNode<T> _treeNode = new TreeNode<T>(this, _computeChildBox);
-      this.children.add(_treeNode);
+      QuadTreeNode<T> _quadTreeNode = new QuadTreeNode<T>(this, _computeChildBox);
+      this.children.add(_quadTreeNode);
     }
   }
   
@@ -163,9 +163,9 @@ public class TreeNode<T extends ShapedObject> {
     return null;
   }
   
-  @DefaultValueUse("framework.environment.TreeNode,framework.math.Rectangle2f")
+  @DefaultValueUse("framework.environment.QuadTreeNode,framework.math.Rectangle2f")
   @SyntheticMember
-  public TreeNode(final Rectangle2f box) {
+  public QuadTreeNode(final Rectangle2f box) {
     this($DEFAULT_VALUE$NEW_0, box);
   }
   

@@ -16,14 +16,14 @@ import framework.environment.Frustum
 import framework.math.Point2f
 import framework.math.Vector2f
 
-class Tree<T extends ShapedObject> {
-	var root : TreeNode<T>
+class QuadTree<T extends ShapedObject> {
+	var root : QuadTreeNode<T>
 
 	new(box : Rectangle2f) {
-		this.root = new TreeNode(box)
+		this.root = new QuadTreeNode(box)
 	}
 
-	def getRoot() : TreeNode<T> {
+	def getRoot() : QuadTreeNode<T> {
 		root
 	}
 
@@ -38,14 +38,14 @@ class Tree<T extends ShapedObject> {
 
 }
 
-class TreeNode<T extends ShapedObject> {
+class QuadTreeNode<T extends ShapedObject> {
 	val box : Rectangle2f
 	var objects : LinkedList<T>
 
-	val parent : WeakReference<TreeNode<T>>
-	var children : List<TreeNode<T>>
+	val parent : WeakReference<QuadTreeNode<T>>
+	var children : List<QuadTreeNode<T>>
 
-	new (parent : TreeNode = null, box : Rectangle2f) {
+	new (parent : QuadTreeNode = null, box : Rectangle2f) {
 		if (parent !== null) {
 			this.parent = new WeakReference(parent)
 		} else {
@@ -56,7 +56,7 @@ class TreeNode<T extends ShapedObject> {
 	}
 
 	// Getter
-	def getParent() : TreeNode<T> {
+	def getParent() : QuadTreeNode<T> {
 		this.parent?.get
 	}
 
@@ -68,14 +68,14 @@ class TreeNode<T extends ShapedObject> {
 		this.objects
 	}
 
-	def getChildren : List<TreeNode<T>> {
+	def getChildren : List<QuadTreeNode<T>> {
 		this.children
 	}
 
 	// Factory
-	def add(o : T) : TreeNode<T> {
+	def add(o : T) : QuadTreeNode<T> {
 		if (children === null) {
-			var n : TreeNode<T>
+			var n : QuadTreeNode<T>
 			if (objects.size + 1 <= 10) {
 				objects += o
 				n = this
@@ -110,7 +110,7 @@ class TreeNode<T extends ShapedObject> {
 
 	}
 
-	private def pushInBranch(o : T) : TreeNode<T> {
+	private def pushInBranch(o : T) : QuadTreeNode<T> {
 		var ns = new ArrayList
 		for (c : children) {
 			if (o.shape.intersects(c.box)) {
@@ -127,7 +127,7 @@ class TreeNode<T extends ShapedObject> {
 	private def createChildren {
 		this.children = new ArrayList(4)
 		for (i : 0 .. 3) {
-			this.children.add(new TreeNode(this, computeChildBox(i)))
+			this.children.add(new QuadTreeNode(this, computeChildBox(i)))
 		}
 	}
 
@@ -150,10 +150,10 @@ class FrustumIterator<T extends ShapedObject> implements Iterator<T> {
 
 	val frustum : Shape2f<?>
 	var nextObject : T
-	val stack = new Stack<TreeNode<T>>
+	val stack = new Stack<QuadTreeNode<T>>
 	val buffer = new LinkedList<T>
 
-	new(tree : Tree<T>, fr : Shape2f<?>) {
+	new(tree : QuadTree<T>, fr : Shape2f<?>) {
 		this.frustum = fr
 		this.stack += tree.root
 		searchNext

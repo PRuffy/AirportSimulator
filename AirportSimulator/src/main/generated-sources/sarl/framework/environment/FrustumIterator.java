@@ -1,8 +1,8 @@
 package framework.environment;
 
+import framework.environment.QuadTree;
+import framework.environment.QuadTreeNode;
 import framework.environment.ShapedObject;
-import framework.environment.Tree;
-import framework.environment.TreeNode;
 import framework.math.Shape2f;
 import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
@@ -21,13 +21,13 @@ public class FrustumIterator<T extends ShapedObject> implements Iterator<T> {
   
   private T nextObject;
   
-  private final Stack<TreeNode<T>> stack = new Stack<TreeNode<T>>();
+  private final Stack<QuadTreeNode<T>> stack = new Stack<QuadTreeNode<T>>();
   
   private final LinkedList<T> buffer = new LinkedList<T>();
   
-  public FrustumIterator(final Tree<T> tree, final Shape2f<?> fr) {
+  public FrustumIterator(final QuadTree<T> tree, final Shape2f<?> fr) {
     this.frustum = fr;
-    TreeNode<T> _root = tree.getRoot();
+    QuadTreeNode<T> _root = tree.getRoot();
     this.stack.add(_root);
     this.searchNext();
   }
@@ -51,11 +51,11 @@ public class FrustumIterator<T extends ShapedObject> implements Iterator<T> {
       this.nextObject = null;
       while ((this.buffer.isEmpty() && (!this.stack.empty()))) {
         {
-          TreeNode<T> node = this.stack.pop();
+          QuadTreeNode<T> node = this.stack.pop();
           boolean _intersects = this.frustum.intersects(node.getBox());
           if (_intersects) {
-            List<TreeNode<T>> _children = node.getChildren();
-            for (final TreeNode<T> c : _children) {
+            List<QuadTreeNode<T>> _children = node.getChildren();
+            for (final QuadTreeNode<T> c : _children) {
               this.stack.add(c);
             }
             LinkedList<T> _objects = node.getObjects();

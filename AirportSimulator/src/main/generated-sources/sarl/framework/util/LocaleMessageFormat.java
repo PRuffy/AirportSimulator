@@ -333,13 +333,13 @@ public class LocaleMessageFormat extends MessageFormat {
   }
   
   @SyntheticMember
-  public LocaleMessageFormat(final String pattern) {
-    super(pattern);
+  public LocaleMessageFormat(final String arg0) {
+    super(arg0);
   }
   
   @SyntheticMember
-  public LocaleMessageFormat(final String pattern, final Locale locale) {
-    super(pattern, locale);
+  public LocaleMessageFormat(final String arg0, final Locale arg1) {
+    super(arg0, arg1);
   }
   
   @SyntheticMember
