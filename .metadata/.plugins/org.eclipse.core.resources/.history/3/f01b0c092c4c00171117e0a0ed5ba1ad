@@ -1,0 +1,38 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.ArrayList
+import framework.math.Shape2f
+import framework.math.Point2f
+import framework.math.Rectangle2f
+
+/** 
+ * @author stay
+ * 
+ */
+class GraphNode {
+	var arrivingEdges :ArrayList<GraphEdge>
+	var leavingEdges : ArrayList<GraphEdge>
+	var surface : Rectangle2f
+	var staticObject : ArrayList<Shape2f<?>>
+	var number : int
+	
+	new {
+		number = 0
+		staticObject = null
+		surface = null
+		leavingEdges = null
+		arrivingEdges = null
+	}
+	
+	def setNumber(number:int){
+		this.number = number;
+	}
+	
+	def defineSurface(p1: Point2f, p2: Point2f){
+		surface =  new Rectangle2f(p1, p2)
+	}
+	
+}

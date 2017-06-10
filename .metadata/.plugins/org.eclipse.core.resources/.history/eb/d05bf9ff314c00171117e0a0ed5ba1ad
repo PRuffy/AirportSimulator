@@ -1,0 +1,74 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.ArrayList
+import java.nio.file.Files
+import java.util.List
+import java.nio.file.Paths
+import java.util.Scanner
+import framework.math.Point2f
+import java.lang.reflect.Array
+import java.io.FileReader
+import java.io.File
+
+/** 
+ * @author stay
+ * 
+ */
+class Graph {
+	var nodeList : ArrayList<GraphNode>
+	var edgeList : ArrayList<GraphEdge>
+	
+	def Graph(adjacencyGraph: String, descriptionNodes : String, descriptionEdges : String){
+		//Creation of the node
+		var nodeInfo : List<String>
+		nodeInfo = Files.readAllLines(Paths.get(descriptionNodes))
+		
+		for (s : nodeInfo){
+			var scan : Scanner
+			scan = new Scanner(s)
+			var node =  new GraphNode
+			node.setNumber(scan.nextInt())
+			var p1 = new Point2f(scan.nextInt(), scan.nextInt())
+			var p2 = new Point2f(scan.nextInt(), scan.nextInt())
+			node.defineSurface(p1,p2)
+			
+			nodeList.add(node)
+			
+		}
+		
+
+		
+		// creation of the edge
+		//Getting the number of line
+		
+		var adjacencyInfo : List<String>
+		adjacencyInfo = Files.readAllLines(Paths.get(adjacencyGraph))
+		var infoOfMatrix = adjacencyInfo.get(0)
+		adjacencyInfo.remove(0)
+		
+		var scanLineOne = new Scanner(infoOfMatrix)
+		var i = scanLineOne.nextInt()
+		var j = scanLineOne.nextInt()
+		var matrix : int[][]
+		matrix = Array.newInstance(int, i, j) as int[][]
+		matrix[0][0].set(1)
+		
+		
+		for(s:adjacencyInfo){
+			var scan : Scanner
+			scan = new Scanner(s)
+			while(scan.next() !== null){
+				var value = scan.nextInt()
+				if (value === 1){
+					
+				}
+			}
+		}
+	}
+	
+	
+	
+}

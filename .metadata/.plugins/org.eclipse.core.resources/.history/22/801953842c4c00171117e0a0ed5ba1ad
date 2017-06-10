@@ -1,0 +1,19 @@
+/** 
+ * 
+ */
+package framework.environment
+/** 
+ * @author stay
+ * 
+ */
+class GraphEdge {
+	var departureNode : GraphNode
+	var arrivalNode : GraphNode
+	var number : int
+	var surface : Rectangle2f
+	
+	def GraphEdge(){
+		departureNode = null;
+		arrivalNode = null;
+	}
+}

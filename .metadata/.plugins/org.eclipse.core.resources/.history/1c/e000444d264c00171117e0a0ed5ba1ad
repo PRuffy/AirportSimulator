@@ -1,0 +1,20 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.ArrayList
+/** 
+ * @author stay
+ * 
+ */
+class GraphNode {
+	var arrivingEdges :ArrayList<GraphEdge>;
+	var leavingEdges : ArrayList<GraphEdge>;
+	
+	def GraphNode(){
+		arrivingEdges =null;
+		leavingEdges = null;
+	}
+	
+}
