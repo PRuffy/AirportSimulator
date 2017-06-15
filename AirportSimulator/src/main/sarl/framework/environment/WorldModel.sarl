@@ -1,0 +1,49 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.List
+import java.util.Collection
+import framework.time.TimeManager
+import framework.gui.WorldModelStateProvider
+import framework.math.Point2f
+
+/** 
+ * @author stay
+ * 
+ */
+class WorldModel extends AbstractEnvironment implements WorldModelStateProvider {
+	
+	var objTree : QuadTree<SituatedObject>
+	var graph : Graph
+	
+	protected override onAgentBodyCreated(body : AgentBody) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	protected override onAgentBodyDestroyed(body : AgentBody) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	protected override computeEndogenousBehaviorInfluences : List<Influence> {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	protected override computePerceptionsFor(^agent : AgentBody) : List<Percept> {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	protected override applyInfluences(motionInfluences : Collection<MotionInfluence>, otherInfluences : Collection<Influence>, timeManager : TimeManager) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override getAllObjects : Iterable<? extends SituatedObject> {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override setMouseTarget(target : Point2f) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+}

@@ -6,37 +6,24 @@
 			<name>Entry01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>0.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>15.0</xvalue>
+					<yvalue>60.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>0.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>H</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>1.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>H</orientation>
@@ -44,12 +31,25 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>0.0</xvalue>
+							<yvalue>60.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>59.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>0.0</xvalue>
+							<yvalue>30.0</yvalue>
+						</point>
+						<point>
+							<xvalue>1.0</xvalue>
+							<yvalue>60.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>V</orientation>
@@ -57,12 +57,12 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>14.0</xvalue>
+							<yvalue>40.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>V</orientation>
@@ -70,12 +70,12 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>50.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>14.0</xvalue>
+							<yvalue>60.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>V</orientation>
@@ -88,80 +88,16 @@
 			<name>Exit01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>0.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>15.0</xvalue>
+					<yvalue>60.0</yvalue>
 				</point>
 			</coordinates>
+
 			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>H</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>H</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>			
 			</components>
 		</node>
 
@@ -170,37 +106,24 @@
 			<name>Entry02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>0.0</xvalue>
+					<yvalue>110.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>15.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>0.0</xvalue>
+							<yvalue>110.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>H</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>111.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>H</orientation>
@@ -208,12 +131,25 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>0.0</xvalue>
+							<yvalue>140.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>139.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>0.0</xvalue>
+							<yvalue>110.0</yvalue>
+						</point>
+						<point>
+							<xvalue>1.0</xvalue>
+							<yvalue>140.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>V</orientation>
@@ -221,12 +157,12 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>110.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>14.0</xvalue>
+							<yvalue>120.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>V</orientation>
@@ -234,12 +170,12 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>130.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>14.0</xvalue>
+							<yvalue>140.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>V</orientation>
@@ -252,81 +188,18 @@
 			<name>Exit02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>0.0</xvalue>
+					<yvalue>110.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>15.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 			</coordinates>
+
 			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>H</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>H</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>			
 			</components>
+
 		</node>
 
 		<node>
@@ -334,37 +207,24 @@
 			<name>MainCorridor01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>30.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>40.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>30.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>31.0</xvalue>
+							<yvalue>40.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>V</orientation>
@@ -372,25 +232,12 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>30.0</xvalue>
+							<yvalue>50.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>31.0</xvalue>
+							<yvalue>120.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>V</orientation>
@@ -398,12 +245,12 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>30.0</xvalue>
+							<yvalue>130.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>31.0</xvalue>
+							<yvalue>140.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>V</orientation>
@@ -411,12 +258,38 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>40.0</xvalue>
+							<yvalue>40.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>39.0</xvalue>
+							<yvalue>80.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>40.0</xvalue>
+							<yvalue>90.0</yvalue>
+						</point>
+						<point>
+							<xvalue>39.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>30.0</xvalue>
+							<yvalue>30.0</yvalue>
+						</point>
+						<point>
+							<xvalue>40.0</xvalue>
+							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>H</orientation>
@@ -424,12 +297,12 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>30.0</xvalue>
+							<yvalue>140.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>40.0</xvalue>
+							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>H</orientation>
@@ -442,27 +315,167 @@
 			<name>WingCorridor01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>65.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>115.0</xvalue>
+					<yvalue>60.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>65.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>85.0</xvalue>
+							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>30.0</yvalue>
+						</point>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>31.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>65.0</xvalue>
+							<yvalue>40.0</yvalue>
+						</point>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>39.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>40.0</yvalue>
+						</point>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>39.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>70.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>51.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+						<point>
+							<xvalue>110.0</xvalue>
+							<yvalue>51.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>80.0</xvalue>
+							<yvalue>60.0</yvalue>
+						</point>
+						<point>
+							<xvalue>100.0</xvalue>
+							<yvalue>59.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>40.0</yvalue>
+						</point>
+						<point>
+							<xvalue>86.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>40.0</yvalue>
+						</point>
+						<point>
+							<xvalue>94.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>70.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+						<point>
+							<xvalue>71.0</xvalue>
+							<yvalue>60.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>110.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+						<point>
+							<xvalue>109.0</xvalue>
+							<yvalue>60.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
 				</wall>			
 			</components>
 		</node>
@@ -472,27 +485,83 @@
 			<name>LuggageDeposit01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>75.0</xvalue>
+					<yvalue>0.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>105.0</xvalue>
+					<yvalue>15.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>75.0</xvalue>
+							<yvalue>0.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>105.0</xvalue>
+							<yvalue>1.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>75.0</xvalue>
+							<yvalue>15.0</yvalue>
+						</point>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>14.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>15.0</yvalue>
+						</point>
+						<point>
+							<xvalue>105.0</xvalue>
+							<yvalue>14.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>75.0</xvalue>
+							<yvalue>0.0</yvalue>
+						</point>
+						<point>
+							<xvalue>76.0</xvalue>
+							<yvalue>15.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>105.0</xvalue>
+							<yvalue>0.0</yvalue>
+						</point>
+						<point>
+							<xvalue>104.0</xvalue>
+							<yvalue>15.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
 				</wall>			
 			</components>
 		</node>
@@ -502,28 +571,168 @@
 			<name>WingCorridor02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>65.0</xvalue>
+					<yvalue>110.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>115.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>70.0</xvalue>
+							<yvalue>110.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>71.0</xvalue>
+							<yvalue>120.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>70.0</xvalue>
+							<yvalue>120.0</yvalue>
+						</point>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>119.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>120.0</yvalue>
+						</point>
+						<point>
+							<xvalue>86.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>65.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>131.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>65.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>139.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>139.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>131.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+						<point>
+							<xvalue>94.0</xvalue>
+							<yvalue>120.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>120.0</yvalue>
+						</point>
+						<point>
+							<xvalue>110.0</xvalue>
+							<yvalue>119.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>110.0</xvalue>
+							<yvalue>120.0</yvalue>
+						</point>
+						<point>
+							<xvalue>109.0</xvalue>
+							<yvalue>110.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>80.0</xvalue>
+							<yvalue>110.0</yvalue>
+						</point>
+						<point>
+							<xvalue>100.0</xvalue>
+							<yvalue>111.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>				
 			</components>
 		</node>
 
@@ -532,28 +741,84 @@
 			<name>LuggageDeposit02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>75.0</xvalue>
+					<yvalue>155.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>105.0</xvalue>
+					<yvalue>170.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>85.0</xvalue>
+							<yvalue>155.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>75.0</xvalue>
+							<yvalue>156.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>75.0</xvalue>
+							<yvalue>155.0</yvalue>
+						</point>
+						<point>
+							<xvalue>76.0</xvalue>
+							<yvalue>170.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>75.0</xvalue>
+							<yvalue>170.0</yvalue>
+						</point>
+						<point>
+							<xvalue>105</xvalue>
+							<yvalue>174.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>105.0</xvalue>
+							<yvalue>170.0</yvalue>
+						</point>
+						<point>
+							<xvalue>104.0</xvalue>
+							<yvalue>155.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>105.0</xvalue>
+							<yvalue>155.0</yvalue>
+						</point>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>156.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
 			</components>
 		</node>
 
@@ -562,27 +827,111 @@
 			<name>WaitingRoom01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>65.0</xvalue>
+					<yvalue>70.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>85.0</xvalue>
+					<yvalue>100.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>65.0</xvalue>
+							<yvalue>70.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>70.0</xvalue>
+							<yvalue>71.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>80.0</xvalue>
+							<yvalue>70.0</yvalue>
+						</point>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>71.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>70.0</yvalue>
+						</point>
+						<point>
+							<xvalue>84.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>80.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+						<point>
+							<xvalue>85.0</xvalue>
+							<yvalue>99.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>65.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+						<point>
+							<xvalue>70.0</xvalue>
+							<yvalue>99.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>65.0</xvalue>
+							<yvalue>70.0</yvalue>
+						</point>
+						<point>
+							<xvalue>66.0</xvalue>
+							<yvalue>80.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>65.0</xvalue>
+							<yvalue>90.0</yvalue>
+						</point>
+						<point>
+							<xvalue>66.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
 				</wall>			
 			</components>
 		</node>
@@ -592,28 +941,112 @@
 			<name>WaitingRoom02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>95.0</xvalue>
+					<yvalue>70.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>115.0</xvalue>
+					<yvalue>100.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>95.0</xvalue>
+							<yvalue>70.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>100.0</xvalue>
+							<yvalue>71.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>110.0</xvalue>
+							<yvalue>70.0</yvalue>
+						</point>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>71.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>70.0</yvalue>
+						</point>
+						<point>
+							<xvalue>96.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+						<point>
+							<xvalue>100.0</xvalue>
+							<yvalue>99.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>110.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>99.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>70.0</yvalue>
+						</point>
+						<point>
+							<xvalue>114.0</xvalue>
+							<yvalue>80.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>90.0</yvalue>
+						</point>
+						<point>
+							<xvalue>114.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>				
 			</components>
 		</node>
 
@@ -622,89 +1055,24 @@
 			<name>MainCorridor02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>140.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>150.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>140.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation>V</orientation>
-				</wall>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>150.0</xvalue>
+							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>H</orientation>
@@ -712,15 +1080,80 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>150.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>149.0</xvalue>
+							<yvalue>40.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>150.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+						<point>
+							<xvalue>149.0</xvalue>
+							<yvalue>120.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>150.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+						<point>
+							<xvalue>149.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>140.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+						<point>
+							<xvalue>150.0</xvalue>
+							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
 					<orientation>H</orientation>
+				</wall>
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>140.0</xvalue>
+							<yvalue>40.0</yvalue>
+						</point>
+						<point>
+							<xvalue>141.0</xvalue>
+							<yvalue>80.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>140.0</xvalue>
+							<yvalue>90.0</yvalue>
+						</point>
+						<point>
+							<xvalue>141.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
 				</wall>				
 			</components>
 		</node>
@@ -730,27 +1163,83 @@
 			<name>Boarding01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>165.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>180.0</xvalue>
+					<yvalue>60.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>165.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>180.0</xvalue>
+							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>180.0</xvalue>
+							<yvalue>30.0</yvalue>
+						</point>
+						<point>
+							<xvalue>179.0</xvalue>
+							<yvalue>60.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>165.0</xvalue>
+							<yvalue>60.0</yvalue>
+						</point>
+						<point>
+							<xvalue>180.0</xvalue>
+							<yvalue>59.9</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>165.0</xvalue>
+							<yvalue>30.0</yvalue>
+						</point>
+						<point>
+							<xvalue>166.0</xvalue>
+							<yvalue>40.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>165.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+						<point>
+							<xvalue>166.0</xvalue>
+							<yvalue>60.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
 				</wall>			
 			</components>
 		</node>
@@ -760,28 +1249,15 @@
 			<name>Disembarkation01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>165.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>180.0</xvalue>
+					<yvalue>60.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation></orientation>
-				</wall>			
 			</components>
 		</node>
 
@@ -790,27 +1266,83 @@
 			<name>Boarding02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>165.0</xvalue>
+					<yvalue>110.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>180.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>165.0</xvalue>
+							<yvalue>110.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>180.0</xvalue>
+							<yvalue>111.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>180.0</xvalue>
+							<yvalue>110.0</yvalue>
+						</point>
+						<point>
+							<xvalue>179.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>165.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+						<point>
+							<xvalue>180.0</xvalue>
+							<yvalue>139.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>165.0</xvalue>
+							<yvalue>110.0</yvalue>
+						</point>
+						<point>
+							<xvalue>166.0</xvalue>
+							<yvalue>120.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>165.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+						<point>
+							<xvalue>166.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
 				</wall>			
 			</components>
 		</node>
@@ -820,28 +1352,15 @@
 			<name>Diserbarkation02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>165.0</xvalue>
+					<yvalue>110.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>180.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 			</coordinates>
 			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation></orientation>
-				</wall>			
 			</components>
 		</node>
 	</nodes>
@@ -853,12 +1372,12 @@
 			<name>SubCorridor01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>15.0</xvalue>
+					<yvalue>40.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>30.0</xvalue>
+					<yvalue>50.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -866,15 +1385,29 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>40.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>30.0</xvalue>
+							<yvalue>41.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>15.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+						<point>
+							<xvalue>30.0</xvalue>
+							<yvalue>59.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
 				</wall>			
 			</components>
 		</edge>
@@ -884,29 +1417,15 @@
 			<name>SubCorridor02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>15.0</xvalue>
+					<yvalue>40.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>30.0</xvalue>
+					<yvalue>50.0</yvalue>
 				</point>
 			</coordinates>
-
 			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation></orientation>
-				</wall>			
 			</components>
 		</edge>
 
@@ -915,12 +1434,12 @@
 			<name>SubCorridor03</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>15.0</xvalue>
+					<yvalue>120.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>30.0</xvalue>
+					<yvalue>130.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -928,15 +1447,29 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>15.0</xvalue>
+							<yvalue>120.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>30.0</xvalue>
+							<yvalue>121.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
+					<orientation>H</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>15.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+						<point>
+							<xvalue>30.0</xvalue>
+							<yvalue>129.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
 				</wall>			
 			</components>
 		</edge>
@@ -946,29 +1479,16 @@
 			<name>SubCorridor04</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>15.0</xvalue>
+					<yvalue>120.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>30.0</xvalue>
+					<yvalue>130.0</yvalue>
 				</point>
 			</coordinates>
 
 			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation></orientation>
-				</wall>			
 			</components>
 		</edge>
 
@@ -977,12 +1497,12 @@
 			<name>SecurityDoor01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>40.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>65.0</xvalue>
+					<yvalue>40.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -990,16 +1510,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>40.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>65.0</xvalue>
+							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>40.0</xvalue>
+							<yvalue>40.0</yvalue>
+						</point>
+						<point>
+							<xvalue>65.0</xvalue>
+							<yvalue>39.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>		
 			</components>
 		</edge>
 
@@ -1008,12 +1542,12 @@
 			<name>SecurityDoor02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>40.0</xvalue>
+					<yvalue>80.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>65.0</xvalue>
+					<yvalue>90.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1021,15 +1555,29 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>40.0</xvalue>
+							<yvalue>80.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>65.0</xvalue>
+							<yvalue>81.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>40.0</xvalue>
+							<yvalue>90.0</yvalue>
+						</point>
+						<point>
+							<xvalue>65.0</xvalue>
+							<yvalue>89.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
 				</wall>			
 			</components>
 		</edge>
@@ -1039,12 +1587,12 @@
 			<name>SecurityDoor03</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>40.0</xvalue>
+					<yvalue>130.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>65.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1052,15 +1600,29 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>40.0</xvalue>
+							<yvalue>130.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>65.0</xvalue>
+							<yvalue>131.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>40.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+						<point>
+							<xvalue>65.0</xvalue>
+							<yvalue>139.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
 				</wall>			
 			</components>
 		</edge>
@@ -1070,12 +1632,12 @@
 			<name>SubWingCorridor01</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>85.0</xvalue>
+					<yvalue>15.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>95.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1083,16 +1645,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>85.0</xvalue>
+							<yvalue>15.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>86.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>V</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>15.0</yvalue>
+						</point>
+						<point>
+							<xvalue>89.0</xvalue>
+							<yvalue>30.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>		
 			</components>
 		</edge>
 
@@ -1101,29 +1677,16 @@
 			<name>SubWingCorridor02</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>85.0</xvalue>
+					<yvalue>15.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>95.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 			</coordinates>
 
-			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation></orientation>
-				</wall>			
+			<components>	
 			</components>
 		</edge>
 
@@ -1132,12 +1695,12 @@
 			<name>SubWingCorridor03</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>85.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>95.0</xvalue>
+					<yvalue>155.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1145,16 +1708,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>85.0</xvalue>
+							<yvalue>140.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>86.0</xvalue>
+							<yvalue>150.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>V</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>95.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+						<point>
+							<xvalue>89.0</xvalue>
+							<yvalue>150.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>				
 			</components>
 		</edge>
 
@@ -1163,29 +1740,16 @@
 			<name>SubWingCorridor04</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>85.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>95.0</xvalue>
+					<yvalue>155.0</yvalue>
 				</point>
 			</coordinates>
 
-			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation></orientation>
-				</wall>			
+			<components>		
 			</components>
 		</edge>
 
@@ -1194,12 +1758,12 @@
 			<name>SecurityDoor04</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>70.0</xvalue>
+					<yvalue>60.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>80.0</xvalue>
+					<yvalue>70.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1207,16 +1771,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>70.0</xvalue>
+							<yvalue>60.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>71.0</xvalue>
+							<yvalue>70.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>80.0</xvalue>
+							<yvalue>60.0</yvalue>
+						</point>
+						<point>
+							<xvalue>79.0</xvalue>
+							<yvalue>70.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>					
 			</components>
 		</edge>
 
@@ -1225,12 +1803,12 @@
 			<name>SecurityDoor05</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>110.0</xvalue>
+					<yvalue>60.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>120.0</xvalue>
+					<yvalue>70.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1238,16 +1816,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>110.0</xvalue>
+							<yvalue>60.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>111.0</xvalue>
+							<yvalue>70.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>120.0</xvalue>
+							<yvalue>60.0</yvalue>
+						</point>
+						<point>
+							<xvalue>119.0</xvalue>
+							<yvalue>70.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>					
 			</components>
 		</edge>
 
@@ -1256,12 +1848,12 @@
 			<name>SecurityDoor06</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>70.0</xvalue>
+					<yvalue>100.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>80.0</xvalue>
+					<yvalue>110.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1269,16 +1861,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>70.0</xvalue>
+							<yvalue>100.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>71.0</xvalue>
+							<yvalue>110.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>80.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+						<point>
+							<xvalue>79.0</xvalue>
+							<yvalue>110.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>					
 			</components>
 		</edge>
 
@@ -1287,12 +1893,12 @@
 			<name>SecurityDoor07</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>110.0</xvalue>
+					<yvalue>100.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>120.0</xvalue>
+					<yvalue>110.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1300,16 +1906,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>110.0</xvalue>
+							<yvalue>100.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>111.0</xvalue>
+							<yvalue>110.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>V</orientation>
+				</wall>
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>120.0</xvalue>
+							<yvalue>100.0</yvalue>
+						</point>
+						<point>
+							<xvalue>119.0</xvalue>
+							<yvalue>110.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>V</orientation>
+				</wall>					
 			</components>
 		</edge>
 
@@ -1318,12 +1938,12 @@
 			<name>SecurityDoor08</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>115.0</xvalue>
+					<yvalue>30.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>140.0</xvalue>
+					<yvalue>40.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1331,16 +1951,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>115.0</xvalue>
+							<yvalue>30.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>140.0</xvalue>
+							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>40.0</yvalue>
+						</point>
+						<point>
+							<xvalue>140.0</xvalue>
+							<yvalue>39.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>		
 			</components>
 		</edge>
 
@@ -1349,12 +1983,12 @@
 			<name>SecurityDoor09</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>115.0</xvalue>
+					<yvalue>80.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>140.0</xvalue>
+					<yvalue>90.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1362,16 +1996,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>115.0</xvalue>
+							<yvalue>80.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>140.0</xvalue>
+							<yvalue>81.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>90.0</yvalue>
+						</point>
+						<point>
+							<xvalue>140.0</xvalue>
+							<yvalue>9.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>		
 			</components>
 		</edge>
 
@@ -1380,12 +2028,12 @@
 			<name>SecurityDoor10</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>115.0</xvalue>
+					<yvalue>130.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>140.0</xvalue>
+					<yvalue>140.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1393,16 +2041,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>115.0</xvalue>
+							<yvalue>130.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>140.0</xvalue>
+							<yvalue>131.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>115.0</xvalue>
+							<yvalue>140.0</yvalue>
+						</point>
+						<point>
+							<xvalue>140.0</xvalue>
+							<yvalue>139.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>		
 			</components>
 		</edge>
 
@@ -1411,12 +2073,12 @@
 			<name>SubCorridor05</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>150.0</xvalue>
+					<yvalue>40.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>165.0</xvalue>
+					<yvalue>50.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1424,16 +2086,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>150.0</xvalue>
+							<yvalue>40.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>165.0</xvalue>
+							<yvalue>41.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>150.0</xvalue>
+							<yvalue>50.0</yvalue>
+						</point>
+						<point>
+							<xvalue>165.0</xvalue>
+							<yvalue>49.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>		
 			</components>
 		</edge>
 
@@ -1442,29 +2118,16 @@
 			<name>SubCorridor06</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>150.0</xvalue>
+					<yvalue>40.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>165.0</xvalue>
+					<yvalue>50.0</yvalue>
 				</point>
 			</coordinates>
 
 			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation></orientation>
-				</wall>			
 			</components>
 		</edge>
 
@@ -1473,12 +2136,12 @@
 			<name>SubCorridor07</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>150.0</xvalue>
+					<yvalue>120.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>165.0</xvalue>
+					<yvalue>130.0</yvalue>
 				</point>
 			</coordinates>
 
@@ -1486,16 +2149,30 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>150.0</xvalue>
+							<yvalue>120.0</yvalue>
 						</point>
 						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
+							<xvalue>165.0</xvalue>
+							<yvalue>121.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation></orientation>
-				</wall>			
+					<orientation>H</orientation>
+				</wall>	
+
+				<wall>
+					<coordinates>
+						<point>
+							<xvalue>150.0</xvalue>
+							<yvalue>130.0</yvalue>
+						</point>
+						<point>
+							<xvalue>165.0</xvalue>
+							<yvalue>129.0</yvalue>
+						</point>
+					</coordinates>
+					<orientation>H</orientation>
+				</wall>		
 			</components>
 		</edge>
 
@@ -1504,29 +2181,16 @@
 			<name>SubCorridor08</name>
 			<coordinates>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>150.0</xvalue>
+					<yvalue>120.0</yvalue>
 				</point>
 				<point>
-					<xvalue></xvalue>
-					<yvalue></yvalue>
+					<xvalue>165.0</xvalue>
+					<yvalue>130.0</yvalue>
 				</point>
 			</coordinates>
 
-			<components>
-				<wall>
-					<coordinates>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-						<point>
-							<xvalue></xvalue>
-							<yvalue></yvalue>
-						</point>
-					</coordinates>
-					<orientation></orientation>
-				</wall>			
+			<components>		
 			</components>
 		</edge>
 	</edges>	
