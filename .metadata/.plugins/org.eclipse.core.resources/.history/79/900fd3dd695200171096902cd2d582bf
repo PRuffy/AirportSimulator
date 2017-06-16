@@ -1,0 +1,45 @@
+/** 
+ * 
+ */
+package framework
+
+import framework.environment.Graph
+import framework.environment.SituatedObject
+import framework.environment.QuadTree
+import javax.xml.parsers.DocumentBuilderFactory
+import javax.xml.parsers.DocumentBuilder
+import java.io.File
+import org.w3c.dom.Document
+import javax.xml.parsers.ParserConfigurationException
+import org.xml.sax.SAXException
+import java.io.IOException
+import org.w3c.dom.Element
+import org.w3c.dom.NodeList
+import org.w3c.dom.Node
+
+
+/** 
+ * @author stay
+ * 
+ */
+class CreationOfEnv {
+	def createGraph(filename : String, graph : Graph, objTree : QuadTree<SituatedObject>){
+		try{
+			var dbFactory : DocumentBuilderFactory
+			dbFactory = DocumentBuilderFactory.newInstance()
+			
+			var dBuilder : DocumentBuilder
+			dBuilder = dbFactory.newDocumentBuilder()
+			
+			var doc : Document
+			doc = dBuilder.parse(filename)
+			
+			doc.getDocumentElement().normalize()
+			
+			System.out.println("Root Element :" + doc.getDocumentElement().getNodeName())
+		}catch(e : Exception){
+			e.printStackTrace()
+		}
+		
+	}
+}

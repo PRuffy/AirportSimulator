@@ -1,0 +1,37 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import framework.math.Rectangle2f
+import framework.math.Point2f
+
+/** 
+ * @author stay
+ * 
+ */
+class GraphEdge {
+	var departureNode : GraphNode
+	var arrivalNode : GraphNode
+	var id : String
+	var surface : Rectangle2f
+	var staticObject : ArrayList<Shape2f<?>>
+	
+	new (){
+		departureNode = null;
+		arrivalNode = null;
+		surface = null
+		id = null
+		staticObject = null
+	}
+
+	def setId(id : String) {
+		this.id = id
+	}
+
+	def defineSurface(p1 : Point2f, p2 : Point2f) {
+		surface = new Rectangle2f(p1, p2)
+		
+	}
+	
+}

@@ -24,7 +24,6 @@
 							<yvalue>1.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
 				</wall>
 				<wall>
 					<coordinates>
@@ -37,7 +36,6 @@
 							<yvalue>59.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
 				</wall>
 				<wall>
 					<coordinates>
@@ -50,7 +48,6 @@
 							<yvalue>60.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
 				</wall>	
 				<wall>
 					<coordinates>
@@ -63,8 +60,8 @@
 							<yvalue>40.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
+				
+					</wall>	
 				<wall>
 					<coordinates>
 						<point>
@@ -76,8 +73,8 @@
 							<yvalue>60.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>					
+				
+					</wall>					
 			</components>
 		</node>
 
@@ -122,7 +119,7 @@
 							<yvalue>111.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 				<wall>
 					<coordinates>
@@ -135,7 +132,7 @@
 							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 				<wall>
 					<coordinates>
@@ -148,8 +145,8 @@
 							<yvalue>140.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
+				
+					</wall>	
 				<wall>
 					<coordinates>
 						<point>
@@ -161,8 +158,8 @@
 							<yvalue>120.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
+				
+					</wall>	
 				<wall>
 					<coordinates>
 						<point>
@@ -174,8 +171,8 @@
 							<yvalue>140.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>			
+				
+					</wall>			
 			</components>
 		</node>
 
@@ -221,8 +218,8 @@
 							<yvalue>40.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 				<wall>
 					<coordinates>
 						<point>
@@ -234,8 +231,8 @@
 							<yvalue>120.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 				<wall>
 					<coordinates>
 						<point>
@@ -247,8 +244,8 @@
 							<yvalue>140.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 				<wall>
 					<coordinates>
 						<point>
@@ -260,8 +257,8 @@
 							<yvalue>80.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 				<wall>
 					<coordinates>
 						<point>
@@ -273,8 +270,8 @@
 							<yvalue>130.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 				<wall>
 					<coordinates>
 						<point>
@@ -286,7 +283,7 @@
 							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 				<wall>
 					<coordinates>
@@ -299,7 +296,7 @@
 							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>			
 			</components>
 		</node>
@@ -328,7 +325,7 @@
 							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -342,7 +339,7 @@
 							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -356,7 +353,7 @@
 							<yvalue>39.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -370,7 +367,7 @@
 							<yvalue>39.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -384,7 +381,7 @@
 							<yvalue>51.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -398,7 +395,7 @@
 							<yvalue>51.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -412,7 +409,7 @@
 							<yvalue>59.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -426,8 +423,8 @@
 							<yvalue>50.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -440,8 +437,8 @@
 							<yvalue>50.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -454,8 +451,8 @@
 							<yvalue>60.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -468,8 +465,8 @@
 							<yvalue>60.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>			
+				
+					</wall>			
 			</components>
 		</node>
 
@@ -497,7 +494,7 @@
 							<yvalue>1.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -511,7 +508,7 @@
 							<yvalue>14.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -525,7 +522,7 @@
 							<yvalue>14.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -539,8 +536,8 @@
 							<yvalue>15.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -553,8 +550,8 @@
 							<yvalue>15.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>			
+				
+					</wall>			
 			</components>
 		</node>
 
@@ -583,8 +580,8 @@
 							<yvalue>120.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -597,7 +594,7 @@
 							<yvalue>119.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -611,8 +608,8 @@
 							<yvalue>130.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -625,7 +622,7 @@
 							<yvalue>131.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -639,7 +636,7 @@
 							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -653,7 +650,7 @@
 							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -667,7 +664,7 @@
 							<yvalue>131.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -681,8 +678,8 @@
 							<yvalue>120.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -695,7 +692,7 @@
 							<yvalue>119.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -709,8 +706,8 @@
 							<yvalue>110.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -723,7 +720,7 @@
 							<yvalue>111.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>				
 			</components>
 		</node>
@@ -752,7 +749,7 @@
 							<yvalue>156.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -766,8 +763,8 @@
 							<yvalue>170.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -780,7 +777,7 @@
 							<yvalue>174.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -794,8 +791,8 @@
 							<yvalue>155.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -808,7 +805,7 @@
 							<yvalue>156.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 			</components>
 		</node>
@@ -837,7 +834,7 @@
 							<yvalue>71.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -851,7 +848,7 @@
 							<yvalue>71.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -865,8 +862,8 @@
 							<yvalue>100.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -879,7 +876,7 @@
 							<yvalue>99.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -893,7 +890,7 @@
 							<yvalue>99.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -907,8 +904,8 @@
 							<yvalue>80.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -921,8 +918,8 @@
 							<yvalue>100.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>			
+				
+					</wall>			
 			</components>
 		</node>
 
@@ -950,7 +947,7 @@
 							<yvalue>71.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -964,7 +961,7 @@
 							<yvalue>71.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -978,8 +975,8 @@
 							<yvalue>100.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -992,7 +989,7 @@
 							<yvalue>99.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -1006,7 +1003,7 @@
 							<yvalue>99.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -1020,8 +1017,8 @@
 							<yvalue>80.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -1034,8 +1031,8 @@
 							<yvalue>100.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>				
+				
+					</wall>				
 			</components>
 		</node>
 
@@ -1063,7 +1060,7 @@
 							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 				<wall>
 					<coordinates>
@@ -1076,8 +1073,8 @@
 							<yvalue>40.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 				<wall>
 					<coordinates>
 						<point>
@@ -1089,8 +1086,8 @@
 							<yvalue>120.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 				<wall>
 					<coordinates>
 						<point>
@@ -1102,8 +1099,8 @@
 							<yvalue>140.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 				<wall>
 					<coordinates>
 						<point>
@@ -1115,7 +1112,7 @@
 							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 				<wall>
 					<coordinates>
@@ -1128,8 +1125,8 @@
 							<yvalue>80.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 				<wall>
 					<coordinates>
 						<point>
@@ -1141,8 +1138,8 @@
 							<yvalue>130.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>				
+				
+					</wall>				
 			</components>
 		</node>
 
@@ -1170,7 +1167,7 @@
 							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -1184,8 +1181,8 @@
 							<yvalue>60.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
+				
+					</wall>	
 
 				<wall>
 					<coordinates>
@@ -1198,7 +1195,7 @@
 							<yvalue>59.9</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -1212,8 +1209,8 @@
 							<yvalue>40.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
+				
+					</wall>	
 
 				<wall>
 					<coordinates>
@@ -1226,8 +1223,8 @@
 							<yvalue>60.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>			
+				
+					</wall>			
 			</components>
 		</node>
 
@@ -1271,7 +1268,7 @@
 							<yvalue>111.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -1285,8 +1282,8 @@
 							<yvalue>140.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
+				
+					</wall>	
 
 				<wall>
 					<coordinates>
@@ -1299,7 +1296,7 @@
 							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -1313,8 +1310,8 @@
 							<yvalue>120.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
+				
+					</wall>	
 
 				<wall>
 					<coordinates>
@@ -1327,8 +1324,8 @@
 							<yvalue>140.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>			
+				
+					</wall>			
 			</components>
 		</node>
 
@@ -1348,8 +1345,7 @@
 			</components>
 		</node>
 
-		<edge>
-			<id>E01</id>
+		<edge id="E01">
 			<name>SubCorridor01</name>
 			<coordinates>
 				<point>
@@ -1374,7 +1370,7 @@
 							<yvalue>41.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -1388,13 +1384,12 @@
 							<yvalue>59.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>			
 			</components>
 		</edge>
 
-		<edge>
-			<id>E02</id>
+		<edge id="E02">
 			<name>SubCorridor02</name>
 			<coordinates>
 				<point>
@@ -1410,8 +1405,7 @@
 			</components>
 		</edge>
 
-		<edge>
-			<id>E03</id>
+		<edge id="E03">
 			<name>SubCorridor03</name>
 			<coordinates>
 				<point>
@@ -1436,7 +1430,7 @@
 							<yvalue>121.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>
 
 				<wall>
@@ -1450,13 +1444,12 @@
 							<yvalue>129.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>			
 			</components>
 		</edge>
 
-		<edge>
-			<id>E04</id>
+		<edge id="E04">
 			<name>SubCorridor04</name>
 			<coordinates>
 				<point>
@@ -1473,8 +1466,7 @@
 			</components>
 		</edge>
 
-		<edge>
-			<id>E05</id>
+		<edge id="E05">
 			<name>SecurityDoor01</name>
 			<coordinates>
 				<point>
@@ -1499,7 +1491,7 @@
 							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -1513,13 +1505,12 @@
 							<yvalue>39.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>		
 			</components>
 		</edge>
 
-		<edge>
-			<id>E06</id>
+		<edge id="E06">
 			<name>SecurityDoor02</name>
 			<coordinates>
 				<point>
@@ -1544,7 +1535,7 @@
 							<yvalue>81.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -1558,13 +1549,12 @@
 							<yvalue>89.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>			
 			</components>
 		</edge>
 
-		<edge>
-			<id>E07</id>
+		<edge id="E07">
 			<name>SecurityDoor03</name>
 			<coordinates>
 				<point>
@@ -1589,7 +1579,7 @@
 							<yvalue>131.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -1603,13 +1593,12 @@
 							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>			
 			</components>
 		</edge>
 
-		<edge>
-			<id>E08</id>
+		<edge id="E08">
 			<name>SubWingCorridor01</name>
 			<coordinates>
 				<point>
@@ -1634,8 +1623,8 @@
 							<yvalue>30.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
+				
+					</wall>	
 
 				<wall>
 					<coordinates>
@@ -1648,13 +1637,12 @@
 							<yvalue>30.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>		
+				
+					</wall>		
 			</components>
 		</edge>
 
-		<edge>
-			<id>E09</id>
+		<edge id="E09">
 			<name>SubWingCorridor02</name>
 			<coordinates>
 				<point>
@@ -1671,8 +1659,7 @@
 			</components>
 		</edge>
 
-		<edge>
-			<id>E10</id>
+		<edge id="E10">
 			<name>SubWingCorridor03</name>
 			<coordinates>
 				<point>
@@ -1697,8 +1684,8 @@
 							<yvalue>150.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>	
+				
+					</wall>	
 
 				<wall>
 					<coordinates>
@@ -1711,13 +1698,12 @@
 							<yvalue>150.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>				
+				
+					</wall>				
 			</components>
 		</edge>
 
-		<edge>
-			<id>E11</id>
+		<edge id="E11">
 			<name>SubWingCorridor04</name>
 			<coordinates>
 				<point>
@@ -1734,8 +1720,7 @@
 			</components>
 		</edge>
 
-		<edge>
-			<id>E12</id>
+		<edge id="E12">
 			<name>SecurityDoor04</name>
 			<coordinates>
 				<point>
@@ -1760,8 +1745,8 @@
 							<yvalue>70.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -1774,13 +1759,12 @@
 							<yvalue>70.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>					
+				
+					</wall>					
 			</components>
 		</edge>
 
-		<edge>
-			<id>E13</id>
+		<edge id="E13">
 			<name>SecurityDoor05</name>
 			<coordinates>
 				<point>
@@ -1805,8 +1789,8 @@
 							<yvalue>70.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -1819,13 +1803,12 @@
 							<yvalue>70.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>					
+				
+					</wall>					
 			</components>
 		</edge>
 
-		<edge>
-			<id>E14</id>
+		<edge id="E14">
 			<name>SecurityDoor06</name>
 			<coordinates>
 				<point>
@@ -1850,8 +1833,8 @@
 							<yvalue>110.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -1864,13 +1847,12 @@
 							<yvalue>110.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>					
+				
+					</wall>					
 			</components>
 		</edge>
 
-		<edge>
-			<id>E15</id>
+		<edge id="E15">
 			<name>SecurityDoor07</name>
 			<coordinates>
 				<point>
@@ -1895,8 +1877,8 @@
 							<yvalue>110.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>
+				
+					</wall>
 
 				<wall>
 					<coordinates>
@@ -1909,13 +1891,12 @@
 							<yvalue>110.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>V</orientation>
-				</wall>					
+				
+					</wall>					
 			</components>
 		</edge>
 
-		<edge>
-			<id>E16</id>
+		<edge id="E16">
 			<name>SecurityDoor08</name>
 			<coordinates>
 				<point>
@@ -1940,7 +1921,7 @@
 							<yvalue>31.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -1954,13 +1935,12 @@
 							<yvalue>39.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>		
 			</components>
 		</edge>
 
-		<edge>
-			<id>E17</id>
+		<edge id="E17">
 			<name>SecurityDoor09</name>
 			<coordinates>
 				<point>
@@ -1985,7 +1965,7 @@
 							<yvalue>81.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -1999,13 +1979,12 @@
 							<yvalue>9.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>		
 			</components>
 		</edge>
 
-		<edge>
-			<id>E18</id>
+		<edge id="E18">
 			<name>SecurityDoor10</name>
 			<coordinates>
 				<point>
@@ -2030,7 +2009,7 @@
 							<yvalue>131.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -2044,13 +2023,12 @@
 							<yvalue>139.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>		
 			</components>
 		</edge>
 
-		<edge>
-			<id>E19</id>
+		<edge id="E19">
 			<name>SubCorridor05</name>
 			<coordinates>
 				<point>
@@ -2075,7 +2053,7 @@
 							<yvalue>41.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -2089,13 +2067,12 @@
 							<yvalue>49.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>		
 			</components>
 		</edge>
 
-		<edge>
-			<id>E20</id>
+		<edge id="E20">
 			<name>SubCorridor06</name>
 			<coordinates>
 				<point>
@@ -2112,8 +2089,7 @@
 			</components>
 		</edge>
 
-		<edge>
-			<id>E21</id>
+		<edge id="E21">
 			<name>SubCorridor07</name>
 			<coordinates>
 				<point>
@@ -2138,7 +2114,7 @@
 							<yvalue>121.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>	
 
 				<wall>
@@ -2152,13 +2128,12 @@
 							<yvalue>129.0</yvalue>
 						</point>
 					</coordinates>
-					<orientation>H</orientation>
+					
 				</wall>		
 			</components>
 		</edge>
 
-		<edge>
-			<id>E22</id>
+		<edge id="E22">
 			<name>SubCorridor08</name>
 			<coordinates>
 				<point>

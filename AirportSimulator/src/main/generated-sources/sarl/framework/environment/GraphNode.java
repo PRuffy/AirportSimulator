@@ -8,6 +8,7 @@ import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import java.util.ArrayList;
+import java.util.Objects;
 import org.eclipse.xtext.xbase.lib.Pure;
 
 /**
@@ -25,18 +26,25 @@ public class GraphNode {
   
   private ArrayList<Shape2f<?>> staticObject;
   
-  private int number;
+  private String id;
+  
+  private String name;
   
   public GraphNode() {
-    this.number = 0;
+    this.id = null;
     this.staticObject = null;
     this.surface = null;
     this.leavingEdges = null;
     this.arrivingEdges = null;
+    this.name = null;
   }
   
-  public int setNumber(final int number) {
-    return this.number = number;
+  public String setId(final String id) {
+    return this.id = id;
+  }
+  
+  public String setName(final String name) {
+    return this.name = name;
   }
   
   public Rectangle2f defineSurface(final Point2f p1, final Point2f p2) {
@@ -55,8 +63,12 @@ public class GraphNode {
     if (getClass() != obj.getClass())
       return false;
     GraphNode other = (GraphNode) obj;
-    if (other.number != this.number)
+    if (!Objects.equals(this.id, other.id)) {
       return false;
+    }
+    if (!Objects.equals(this.name, other.name)) {
+      return false;
+    }
     return super.equals(obj);
   }
   
@@ -66,7 +78,8 @@ public class GraphNode {
   public int hashCode() {
     int result = super.hashCode();
     final int prime = 31;
-    result = prime * result + this.number;
+    result = prime * result + Objects.hashCode(this.id);
+    result = prime * result + Objects.hashCode(this.name);
     return result;
   }
 }

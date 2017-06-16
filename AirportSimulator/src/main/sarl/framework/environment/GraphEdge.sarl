@@ -5,6 +5,8 @@ package framework.environment
 
 import framework.math.Rectangle2f
 import framework.math.Point2f
+import java.util.ArrayList
+import framework.math.Shape2f
 
 /** 
  * @author stay
@@ -13,18 +15,26 @@ import framework.math.Point2f
 class GraphEdge {
 	var departureNode : GraphNode
 	var arrivalNode : GraphNode
-	var number : int
+	var id : String
 	var surface : Rectangle2f
+	var staticObject : ArrayList<Shape2f<?>>
+	var name : String
 	
 	new (){
 		departureNode = null;
 		arrivalNode = null;
 		surface = null
-		number = 0
+		id = null
+		name = null
+		staticObject = null
 	}
 
-	def setNumber(number : int) {
-		this.number = number
+	def setId(id : String) {
+		this.id = id
+	}
+	
+	def setName(name : String){
+		this.name = name
 	}
 
 	def defineSurface(p1 : Point2f, p2 : Point2f) {

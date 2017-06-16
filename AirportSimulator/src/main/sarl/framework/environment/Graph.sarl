@@ -13,7 +13,10 @@ class Graph {
 	var nodeList : ArrayList<GraphNode>
 	var edgeList : ArrayList<GraphEdge>
 
-
+	new(){
+		nodeList = new ArrayList<GraphNode>
+		edgeList = new ArrayList<GraphEdge>
+	}
 	
 	def addNode(node : GraphNode){
 		nodeList.add(node)

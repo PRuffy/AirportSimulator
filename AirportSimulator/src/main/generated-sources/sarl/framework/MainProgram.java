@@ -22,7 +22,7 @@ public class MainProgram {
   private final static String filename = "res/graphInfo.xml";
   
   public static void main(final String... argv) {
-    Graph graph = null;
+    Graph graph = new Graph();
     QuadTree<SituatedObject> objTree = null;
     CreationOfEnv envInit = null;
     CreationOfEnv _creationOfEnv = new CreationOfEnv();

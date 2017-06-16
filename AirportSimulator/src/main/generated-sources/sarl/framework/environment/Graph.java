@@ -19,6 +19,13 @@ public class Graph {
   
   private ArrayList<GraphEdge> edgeList;
   
+  public Graph() {
+    ArrayList<GraphNode> _arrayList = new ArrayList<GraphNode>();
+    this.nodeList = _arrayList;
+    ArrayList<GraphEdge> _arrayList_1 = new ArrayList<GraphEdge>();
+    this.edgeList = _arrayList_1;
+  }
+  
   public boolean addNode(final GraphNode node) {
     return this.nodeList.add(node);
   }
@@ -40,10 +47,5 @@ public class Graph {
   public int hashCode() {
     int result = super.hashCode();
     return result;
-  }
-  
-  @SyntheticMember
-  public Graph() {
-    super();
   }
 }
