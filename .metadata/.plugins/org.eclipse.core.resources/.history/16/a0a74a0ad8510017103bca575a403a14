@@ -1,0 +1,18 @@
+/** 
+ * 
+ */
+package framework
+
+import framework.environment.Graph
+import framework.environment.SituatedObject
+import framework.environment.QuadTree
+
+/** 
+ * @author stay
+ * 
+ */
+class CreationOfEnv {
+	def createGraph(filename : String, graph : Graph, objTree : QuadTree<SituatedObject>){
+		
+	}
+}

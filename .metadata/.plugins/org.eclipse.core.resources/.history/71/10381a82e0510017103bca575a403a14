@@ -1,0 +1,82 @@
+/** 
+ * 
+ */
+package framework
+
+import framework.environment.Graph
+import framework.environment.SituatedObject
+import framework.environment.QuadTree
+import javax.xml.parsers.DocumentBuilderFactory
+import javax.xml.parsers.DocumentBuilder
+import java.io.File
+import org.w3c.dom.Document
+import javax.xml.parsers.ParserConfigurationException
+import org.xml.sax.SAXException
+import java.io.IOException
+import org.w3c.dom.Element
+import org.w3c.dom.NodeList
+
+/** 
+ * @author stay
+ * 
+ */
+class CreationOfEnv {
+	def createGraph(filename : String, graph : Graph, objTree : QuadTree<SituatedObject>){
+		var factory : DocumentBuilderFactory
+		factory = DocumentBuilderFactory.newInstance()
+		
+		try {
+			var builder : DocumentBuilder
+			builder = factory.newDocumentBuilder()
+			
+			try {
+  				var document : Document
+				document = builder.parse(new File(filename))
+
+				var racine : Element
+				racine = document.getDocumentElement()
+				System.out.println(racine.getNodeName());
+				
+				var racineNoeud : NodeList
+				racineNoeud = racine.getChildNodes()
+				
+				var nbChild = racineNoeud.getLength()
+				var i : int
+				
+				for (i = 0; i < nbChild; i++) {
+					var SecondLevelNodeList : NodeList
+					SecondLevelNodeList = racineNoeud.item(i).getChildNodes()
+					var nbChild2 = SecondLevelNodeList.getLength()
+					var j : int
+					
+					for(j = 0;j<nbChild2;j++){
+						if (SecondLevelNodeList.item(i).getNodeName() === "node") {
+							var ThirdLevelNodeList : NodeList
+							ThirdLevelNodeList = SecondLevelNodeList.item(i).getChildNodes()
+							var nbChild3 = ThirdLevelNodeList.getLength()
+							var k : int
+							
+							for(k = 0; k<nbChild3; k++){
+								System.out.println(ThirdLevelNodeList.item(i).getNodeName());
+							}
+						}
+						
+					}
+				}
+				
+			}catch (e : ParserConfigurationException) {
+			    e.printStackTrace();
+			}catch (e : SAXException) {
+				e.printStackTrace();
+			} catch (e : IOException) {
+    			e.printStackTrace();
+			}
+		}catch (e : ParserConfigurationException) {
+    	e.printStackTrace();
+    	}
+
+		
+		
+		
+	}
+}

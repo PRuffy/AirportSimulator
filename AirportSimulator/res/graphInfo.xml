@@ -1,8 +1,6 @@
 <?xml version= "1.0" encoding="UTF8"?>
-<root>
-	<nodes>
-		<node>
-			<id>N01</id>
+<graph>
+		<node id="N01">
 			<name>Entry01</name>
 			<coordinates>
 				<point>
@@ -83,8 +81,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N02</id>
+		<node id="N02">
 			<name>Exit01</name>
 			<coordinates>
 				<point>
@@ -101,8 +98,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N03</id>
+		<node id="N03">
 			<name>Entry02</name>
 			<coordinates>
 				<point>
@@ -183,8 +179,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N04</id>
+		<node id="N04">
 			<name>Exit02</name>
 			<coordinates>
 				<point>
@@ -202,8 +197,7 @@
 
 		</node>
 
-		<node>
-			<id>N05</id>
+		<node id="N05">
 			<name>MainCorridor01</name>
 			<coordinates>
 				<point>
@@ -310,8 +304,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N06</id>
+		<node id="N06">
 			<name>WingCorridor01</name>
 			<coordinates>
 				<point>
@@ -480,8 +473,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N07</id>
+		<node id="N07">
 			<name>LuggageDeposit01</name>
 			<coordinates>
 				<point>
@@ -736,8 +728,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N09</id>
+		<node id="N09">
 			<name>LuggageDeposit02</name>
 			<coordinates>
 				<point>
@@ -822,8 +813,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N10</id>
+		<node id="N10">
 			<name>WaitingRoom01</name>
 			<coordinates>
 				<point>
@@ -936,8 +926,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N11</id>
+		<node id="N11">
 			<name>WaitingRoom02</name>
 			<coordinates>
 				<point>
@@ -1050,8 +1039,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N12</id>
+		<node id="N12">
 			<name>MainCorridor02</name>
 			<coordinates>
 				<point>
@@ -1158,8 +1146,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N13</id>
+		<node id="N13">
 			<name>Boarding01</name>
 			<coordinates>
 				<point>
@@ -1244,8 +1231,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N14</id>
+		<node id="N14">
 			<name>Disembarkation01</name>
 			<coordinates>
 				<point>
@@ -1261,8 +1247,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N15</id>
+		<node id="N15">
 			<name>Boarding02</name>
 			<coordinates>
 				<point>
@@ -1347,8 +1332,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N16</id>
+		<node id="N16">
 			<name>Diserbarkation02</name>
 			<coordinates>
 				<point>
@@ -1363,10 +1347,7 @@
 			<components>
 			</components>
 		</node>
-	</nodes>
 
-
-	<edges>
 		<edge>
 			<id>E01</id>
 			<name>SubCorridor01</name>
@@ -2192,6 +2173,5 @@
 
 			<components>		
 			</components>
-		</edge>
-	</edges>	
-</root>
+		</edge>	
+</graph>
