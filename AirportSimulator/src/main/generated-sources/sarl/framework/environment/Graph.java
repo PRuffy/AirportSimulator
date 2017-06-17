@@ -2,7 +2,6 @@ package framework.environment;
 
 import framework.environment.GraphEdge;
 import framework.environment.GraphNode;
-import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import java.util.ArrayList;
@@ -12,7 +11,6 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @author stay
  */
 @SarlSpecification("0.5")
-@SarlElementType(8)
 @SuppressWarnings("all")
 public class Graph {
   private ArrayList<GraphNode> nodeList;
@@ -56,6 +54,23 @@ public class Graph {
   @Pure
   @SyntheticMember
   public boolean equals(final Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    Graph other = (Graph) obj;
+    if (this.nodeList == null) {
+      if (other.nodeList != null)
+        return false;
+    } else if (!this.nodeList.equals(other.nodeList))
+      return false;
+    if (this.edgeList == null) {
+      if (other.edgeList != null)
+        return false;
+    } else if (!this.edgeList.equals(other.edgeList))
+      return false;
     return super.equals(obj);
   }
   
@@ -63,7 +78,10 @@ public class Graph {
   @Pure
   @SyntheticMember
   public int hashCode() {
+    final int prime = 31;
     int result = super.hashCode();
+    result = prime * result + ((this.nodeList== null) ? 0 : this.nodeList.hashCode());
+    result = prime * result + ((this.edgeList== null) ? 0 : this.edgeList.hashCode());
     return result;
   }
 }

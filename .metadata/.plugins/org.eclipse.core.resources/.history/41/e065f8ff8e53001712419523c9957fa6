@@ -1,0 +1,20 @@
+/** 
+ * 
+ */
+package framework.environment
+/** 
+ * @author promet
+ * 
+ */
+abstract class Body_Mover extends AgentBody
+{
+	
+}
+
+class Body_Walker extends Body_Mover
+{
+	
+}
+
+class Body_Phone extends Body_Mover {
+}

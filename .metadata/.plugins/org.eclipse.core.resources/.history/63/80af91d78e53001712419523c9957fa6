@@ -1,0 +1,32 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.UUID
+import framework.math.Shape2f
+import framework.math.Point2f
+
+/** 
+ * @author promet
+ * 
+ */
+abstract class Body_IOT extends AgentBody
+{
+	
+}
+
+class Screener extends Body_IOT
+{
+	new (id : UUID, shape : Shape2f<?>, frustum : Frustum, position : Point2f = null, name : String)
+	{
+		super(id, shape, frustum);
+		this.name = name
+		this.position = position
+	}
+}
+
+class Borne extends Body_IOT
+{
+	
+}

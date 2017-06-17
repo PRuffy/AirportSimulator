@@ -34,7 +34,8 @@ import java.util.List
  * @author St&eacute;phane GALLAND &lt;stephane.galland@utbm.fr&gt;
  * @version $Name$ $Revision$ $Date$
  */
-class AgentBody extends AbstractMobileObject implements Body {
+class AgentBody extends AbstractMobileObject implements Body
+{
 
 	val frustum : Frustum 
 	
@@ -55,6 +56,17 @@ class AgentBody extends AbstractMobileObject implements Body {
 			maxAngularSpeed : float, maxAngularAcceleration : float, frustum : Frustum) {
 		super(id, shape, maxLinearSpeed, maxLinearAcceleration, maxAngularSpeed, maxAngularAcceleration)
 		//TODO assert (frustum == null || Objects.equals(id, frustum.getOwner()));
+		this.frustum = frustum
+		this.type = "BODY"
+	}
+	/** 
+	 * @param id
+	 * @param shape the shape of the body, considering that it is centered at the (0,0) position.
+	 * @param frustum the field-of-view associated to the body.
+	 */
+	new (id : UUID, shape : Shape2f<?>, frustum : Frustum) {
+		super(id, shape, 0, 0, 0, 0)
+		// TODO assert (frustum == null || Objects.equals(id, frustum.getOwner()));
 		this.frustum = frustum
 		this.type = "BODY"
 	}

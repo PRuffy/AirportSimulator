@@ -29,7 +29,6 @@ import framework.gui.FrameworkGUI;
 import framework.math.Point2f;
 import framework.math.Shape2f;
 import framework.math.Vector2f;
-import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import java.awt.Dimension;
@@ -50,7 +49,6 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @version $Name$ $Revision$ $Date$
  */
 @SarlSpecification("0.5")
-@SarlElementType(8)
 @SuppressWarnings("all")
 public class WorldPanel extends JPanel {
   private final WeakReference<FrameworkGUI> windowContainer;
@@ -137,6 +135,18 @@ public class WorldPanel extends JPanel {
   @Pure
   @SyntheticMember
   public boolean equals(final Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    WorldPanel other = (WorldPanel) obj;
+    if (this.windowContainer == null) {
+      if (other.windowContainer != null)
+        return false;
+    } else if (!this.windowContainer.equals(other.windowContainer))
+      return false;
     return super.equals(obj);
   }
   
@@ -144,7 +154,9 @@ public class WorldPanel extends JPanel {
   @Pure
   @SyntheticMember
   public int hashCode() {
+    final int prime = 31;
     int result = super.hashCode();
+    result = prime * result + ((this.windowContainer== null) ? 0 : this.windowContainer.hashCode());
     return result;
   }
   

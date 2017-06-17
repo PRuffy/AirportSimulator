@@ -1,0 +1,37 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.UUID
+import framework.math.Shape2f
+import framework.math.Point2f
+
+/** 
+ * @author promet
+ * 
+ */
+abstract class Body_Mover extends AgentBody
+{
+	
+}
+
+class Body_Walker extends Body_Mover
+{
+	new (id : UUID, shape : Shape2f<?>, frustum : Frustum, position : Point2f = null, name : String)
+	{
+		super(id, shape, frustum);
+		this.name = name
+		this.position = position
+	}
+}
+
+class Body_Phone extends Body_Mover
+{
+	new (id : UUID, shape : Shape2f<?>, frustum : Frustum, position : Point2f = null, name : String)
+	{
+		super(id, shape, frustum);
+		this.name = name
+		this.position = position
+	}
+}

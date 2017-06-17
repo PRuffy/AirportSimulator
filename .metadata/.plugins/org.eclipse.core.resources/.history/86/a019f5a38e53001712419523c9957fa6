@@ -1,0 +1,22 @@
+/** 
+ * 
+ */
+package framework.environment
+/** 
+ * @author promet
+ * 
+ */
+abstract class Body_IOT extends AgentBody
+{
+	
+}
+
+class Screener extends Body_IOT
+{
+	
+}
+
+class Borne extends Body_IOT
+{
+	
+}

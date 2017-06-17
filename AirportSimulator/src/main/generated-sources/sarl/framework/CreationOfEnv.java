@@ -6,7 +6,6 @@ import framework.environment.GraphNode;
 import framework.environment.QuadTree;
 import framework.environment.SituatedObject;
 import framework.math.Point2f;
-import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import javax.xml.parsers.DocumentBuilder;
@@ -21,7 +20,6 @@ import org.w3c.dom.NodeList;
  * @author stay
  */
 @SarlSpecification("0.5")
-@SarlElementType(8)
 @SuppressWarnings("all")
 public class CreationOfEnv {
   public void createGraph(final String filename, final Graph graph, final QuadTree<SituatedObject> objTree) {

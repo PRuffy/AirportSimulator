@@ -11,7 +11,6 @@ import framework.environment.SituatedObject;
 import framework.gui.WorldModelStateProvider;
 import framework.math.Point2f;
 import framework.time.TimeManager;
-import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import java.util.Collection;
@@ -22,7 +21,6 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @author stay
  */
 @SarlSpecification("0.5")
-@SarlElementType(8)
 @SuppressWarnings("all")
 public class WorldModel extends AbstractEnvironment implements WorldModelStateProvider {
   private QuadTree<SituatedObject> objTree;
@@ -69,6 +67,23 @@ public class WorldModel extends AbstractEnvironment implements WorldModelStatePr
   @Pure
   @SyntheticMember
   public boolean equals(final Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    WorldModel other = (WorldModel) obj;
+    if (this.objTree == null) {
+      if (other.objTree != null)
+        return false;
+    } else if (!this.objTree.equals(other.objTree))
+      return false;
+    if (this.graph == null) {
+      if (other.graph != null)
+        return false;
+    } else if (!this.graph.equals(other.graph))
+      return false;
     return super.equals(obj);
   }
   
@@ -76,7 +91,10 @@ public class WorldModel extends AbstractEnvironment implements WorldModelStatePr
   @Pure
   @SyntheticMember
   public int hashCode() {
+    final int prime = 31;
     int result = super.hashCode();
+    result = prime * result + ((this.objTree== null) ? 0 : this.objTree.hashCode());
+    result = prime * result + ((this.graph== null) ? 0 : this.graph.hashCode());
     return result;
   }
   

@@ -28,7 +28,6 @@ import framework.util.LocalizedString;
 import io.sarl.lang.annotation.DefaultValue;
 import io.sarl.lang.annotation.DefaultValueSource;
 import io.sarl.lang.annotation.DefaultValueUse;
-import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSourceCode;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
@@ -44,7 +43,6 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @version $Name$ $Revision$ $Date$
  */
 @SarlSpecification("0.5")
-@SarlElementType(8)
 @SuppressWarnings("all")
 public abstract class AbstractSituatedObject implements SituatedObject, Serializable {
   private final UUID id;
@@ -77,6 +75,29 @@ public abstract class AbstractSituatedObject implements SituatedObject, Serializ
   @SyntheticMember
   @SarlSourceCode("null")
   private final static Point2f $DEFAULT_VALUE$NEW_0 = null;
+  
+  /**
+   * @param id the identifier of the object.
+   * @param shape the shape of the body, considering that it is centered at the (0,0) position.
+   * @param position is the position of the object.
+   * @param name is the name of the object.
+   */
+  @DefaultValueSource
+  public AbstractSituatedObject(final UUID id, final Shape2f<?> shape, @DefaultValue("framework.environment.AbstractSituatedObject#NEW_1") final Point2f position, final String name) {
+    this.id = id;
+    this.shape = shape;
+    if ((position != null)) {
+      this.position.set(position);
+    }
+    this.name = name;
+  }
+  
+  /**
+   * Default value for the parameter position
+   */
+  @SyntheticMember
+  @SarlSourceCode("null")
+  private final static Point2f $DEFAULT_VALUE$NEW_1 = null;
   
   /**
    * @param id the identifier of the object.
@@ -269,6 +290,18 @@ public abstract class AbstractSituatedObject implements SituatedObject, Serializ
     this(id, shape, $DEFAULT_VALUE$NEW_0);
   }
   
+  /**
+   * @optionalparam id the identifier of the object.
+   * @optionalparam shape the shape of the body, considering that it is centered at the (0,0) position.
+   * @optionalparam position is the position of the object.
+   * @optionalparam name is the name of the object.
+   */
+  @DefaultValueUse("java.util.UUID,framework.math.Shape2f<?>,framework.math.Point2f,java.lang.String")
   @SyntheticMember
-  private final static long serialVersionUID = 4274692527L;
+  public AbstractSituatedObject(final UUID id, final Shape2f<?> shape, final String name) {
+    this(id, shape, $DEFAULT_VALUE$NEW_1, name);
+  }
+  
+  @SyntheticMember
+  private final static long serialVersionUID = 5478987650L;
 }

@@ -34,7 +34,6 @@ import framework.environment.WorldModelState;
 import framework.math.Point2f;
 import framework.math.Vector2f;
 import framework.time.TimeManager;
-import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import java.lang.reflect.Array;
@@ -56,7 +55,6 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @version $Name$ $Revision$ $Date$
  */
 @SarlSpecification("0.5")
-@SarlElementType(8)
 @SuppressWarnings("all")
 public abstract class AbstractEnvironment implements Environment {
   private final Map<UUID, AgentBody> agentBodies = new TreeMap<UUID, AgentBody>();
@@ -387,9 +385,34 @@ public abstract class AbstractEnvironment implements Environment {
     if (getClass() != obj.getClass())
       return false;
     AbstractEnvironment other = (AbstractEnvironment) obj;
+    if (this.agentBodies == null) {
+      if (other.agentBodies != null)
+        return false;
+    } else if (!this.agentBodies.equals(other.agentBodies))
+      return false;
+    if (this.timeManager == null) {
+      if (other.timeManager != null)
+        return false;
+    } else if (!this.timeManager.equals(other.timeManager))
+      return false;
     if (Float.floatToIntBits(other.width) != Float.floatToIntBits(this.width))
       return false;
     if (Float.floatToIntBits(other.height) != Float.floatToIntBits(this.height))
+      return false;
+    if (this.listeners == null) {
+      if (other.listeners != null)
+        return false;
+    } else if (!this.listeners.equals(other.listeners))
+      return false;
+    if (this.stateChanged == null) {
+      if (other.stateChanged != null)
+        return false;
+    } else if (!this.stateChanged.equals(other.stateChanged))
+      return false;
+    if (this.init == null) {
+      if (other.init != null)
+        return false;
+    } else if (!this.init.equals(other.init))
       return false;
     return super.equals(obj);
   }
@@ -398,10 +421,15 @@ public abstract class AbstractEnvironment implements Environment {
   @Pure
   @SyntheticMember
   public int hashCode() {
-    int result = super.hashCode();
     final int prime = 31;
+    int result = super.hashCode();
+    result = prime * result + ((this.agentBodies== null) ? 0 : this.agentBodies.hashCode());
+    result = prime * result + ((this.timeManager== null) ? 0 : this.timeManager.hashCode());
     result = prime * result + Float.floatToIntBits(this.width);
     result = prime * result + Float.floatToIntBits(this.height);
+    result = prime * result + ((this.listeners== null) ? 0 : this.listeners.hashCode());
+    result = prime * result + ((this.stateChanged== null) ? 0 : this.stateChanged.hashCode());
+    result = prime * result + ((this.init== null) ? 0 : this.init.hashCode());
     return result;
   }
 }

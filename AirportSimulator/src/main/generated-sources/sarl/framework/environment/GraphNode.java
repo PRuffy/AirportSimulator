@@ -4,18 +4,15 @@ import framework.environment.GraphEdge;
 import framework.math.Point2f;
 import framework.math.Rectangle2f;
 import framework.math.Shape2f;
-import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import java.util.ArrayList;
-import java.util.Objects;
 import org.eclipse.xtext.xbase.lib.Pure;
 
 /**
  * @author stay
  */
 @SarlSpecification("0.5")
-@SarlElementType(8)
 @SuppressWarnings("all")
 public class GraphNode {
   private ArrayList<GraphEdge> incomingEdges;
@@ -80,12 +77,36 @@ public class GraphNode {
     if (getClass() != obj.getClass())
       return false;
     GraphNode other = (GraphNode) obj;
-    if (!Objects.equals(this.id, other.id)) {
+    if (this.incomingEdges == null) {
+      if (other.incomingEdges != null)
+        return false;
+    } else if (!this.incomingEdges.equals(other.incomingEdges))
       return false;
-    }
-    if (!Objects.equals(this.name, other.name)) {
+    if (this.leavingEdges == null) {
+      if (other.leavingEdges != null)
+        return false;
+    } else if (!this.leavingEdges.equals(other.leavingEdges))
       return false;
-    }
+    if (this.surface == null) {
+      if (other.surface != null)
+        return false;
+    } else if (!this.surface.equals(other.surface))
+      return false;
+    if (this.staticObject == null) {
+      if (other.staticObject != null)
+        return false;
+    } else if (!this.staticObject.equals(other.staticObject))
+      return false;
+    if (this.id == null) {
+      if (other.id != null)
+        return false;
+    } else if (!this.id.equals(other.id))
+      return false;
+    if (this.name == null) {
+      if (other.name != null)
+        return false;
+    } else if (!this.name.equals(other.name))
+      return false;
     return super.equals(obj);
   }
   
@@ -93,10 +114,14 @@ public class GraphNode {
   @Pure
   @SyntheticMember
   public int hashCode() {
-    int result = super.hashCode();
     final int prime = 31;
-    result = prime * result + Objects.hashCode(this.id);
-    result = prime * result + Objects.hashCode(this.name);
+    int result = super.hashCode();
+    result = prime * result + ((this.incomingEdges== null) ? 0 : this.incomingEdges.hashCode());
+    result = prime * result + ((this.leavingEdges== null) ? 0 : this.leavingEdges.hashCode());
+    result = prime * result + ((this.surface== null) ? 0 : this.surface.hashCode());
+    result = prime * result + ((this.staticObject== null) ? 0 : this.staticObject.hashCode());
+    result = prime * result + ((this.id== null) ? 0 : this.id.hashCode());
+    result = prime * result + ((this.name== null) ? 0 : this.name.hashCode());
     return result;
   }
 }
