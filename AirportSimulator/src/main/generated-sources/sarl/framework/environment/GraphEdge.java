@@ -33,7 +33,6 @@ public class GraphEdge {
   public GraphEdge() {
     this.departureNode = null;
     this.arrivalNode = null;
-    this.surface = null;
     this.id = null;
     this.name = null;
     this.staticObject = null;
@@ -50,6 +49,18 @@ public class GraphEdge {
   public Rectangle2f defineSurface(final Point2f p1, final Point2f p2) {
     Rectangle2f _rectangle2f = new Rectangle2f(p1, p2);
     return this.surface = _rectangle2f;
+  }
+  
+  public GraphNode addDepartureNode(final GraphNode n) {
+    return this.departureNode = n;
+  }
+  
+  public GraphNode addArrivalNode(final GraphNode n) {
+    return this.arrivalNode = n;
+  }
+  
+  public void printLeaving() {
+    this.departureNode.printProperty();
   }
   
   @Override

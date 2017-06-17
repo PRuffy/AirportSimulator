@@ -555,8 +555,7 @@
 			</components>
 		</node>
 
-		<node>
-			<id>N08</id>
+		<node id="N08">
 			<name>WingCorridor02</name>
 			<coordinates>
 				<point>
@@ -1387,6 +1386,8 @@
 					
 				</wall>			
 			</components>
+			<leaving>N01</leaving>
+			<arriving>N05</arriving>
 		</edge>
 
 		<edge id="E02">
@@ -1403,6 +1404,8 @@
 			</coordinates>
 			<components>
 			</components>
+			<leaving>N05</leaving>
+			<arriving>N01</arriving>
 		</edge>
 
 		<edge id="E03">
@@ -1447,6 +1450,8 @@
 					
 				</wall>			
 			</components>
+			<leaving>N03</leaving>
+			<arriving>N05</arriving>
 		</edge>
 
 		<edge id="E04">
@@ -1464,6 +1469,8 @@
 
 			<components>
 			</components>
+			<leaving>N05</leaving>
+			<arriving>N04</arriving>
 		</edge>
 
 		<edge id="E05">
@@ -1508,6 +1515,9 @@
 					
 				</wall>		
 			</components>
+
+			<leaving>N05</leaving>
+			<arriving>N06</arriving>
 		</edge>
 
 		<edge id="E06">
@@ -1552,6 +1562,9 @@
 					
 				</wall>			
 			</components>
+
+			<leaving>N10</leaving>
+			<arriving>N05</arriving>
 		</edge>
 
 		<edge id="E07">
@@ -1596,6 +1609,8 @@
 					
 				</wall>			
 			</components>
+			<leaving>N05</leaving>
+			<arriving>N08</arriving>
 		</edge>
 
 		<edge id="E08">
@@ -1640,6 +1655,8 @@
 				
 					</wall>		
 			</components>
+			<leaving>N06</leaving>
+			<arriving>N07</arriving>
 		</edge>
 
 		<edge id="E09">
@@ -1657,6 +1674,8 @@
 
 			<components>	
 			</components>
+			<leaving>N07</leaving>
+			<arriving>N06</arriving>
 		</edge>
 
 		<edge id="E10">
@@ -1701,6 +1720,8 @@
 				
 					</wall>				
 			</components>
+			<leaving>N08</leaving>
+			<arriving>N09</arriving>
 		</edge>
 
 		<edge id="E11">
@@ -1718,6 +1739,8 @@
 
 			<components>		
 			</components>
+			<leaving>N09</leaving>
+			<arriving>N08</arriving>
 		</edge>
 
 		<edge id="E12">
@@ -1762,17 +1785,19 @@
 				
 					</wall>					
 			</components>
+			<leaving>N06</leaving>
+			<arriving>N10</arriving>
 		</edge>
 
 		<edge id="E13">
 			<name>SecurityDoor05</name>
 			<coordinates>
 				<point>
-					<xvalue>110.0</xvalue>
+					<xvalue>100.0</xvalue>
 					<yvalue>60.0</yvalue>
 				</point>
 				<point>
-					<xvalue>120.0</xvalue>
+					<xvalue>110.0</xvalue>
 					<yvalue>70.0</yvalue>
 				</point>
 			</coordinates>
@@ -1781,11 +1806,11 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue>110.0</xvalue>
+							<xvalue>100.0</xvalue>
 							<yvalue>60.0</yvalue>
 						</point>
 						<point>
-							<xvalue>111.0</xvalue>
+							<xvalue>101.0</xvalue>
 							<yvalue>70.0</yvalue>
 						</point>
 					</coordinates>
@@ -1795,17 +1820,19 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue>120.0</xvalue>
+							<xvalue>110.0</xvalue>
 							<yvalue>60.0</yvalue>
 						</point>
 						<point>
-							<xvalue>119.0</xvalue>
+							<xvalue>109.0</xvalue>
 							<yvalue>70.0</yvalue>
 						</point>
 					</coordinates>
 				
 					</wall>					
 			</components>
+			<leaving>N06</leaving>
+			<arriving>N11</arriving>
 		</edge>
 
 		<edge id="E14">
@@ -1850,17 +1877,19 @@
 				
 					</wall>					
 			</components>
+			<leaving>N08</leaving>
+			<arriving>N10</arriving>
 		</edge>
 
 		<edge id="E15">
 			<name>SecurityDoor07</name>
 			<coordinates>
 				<point>
-					<xvalue>110.0</xvalue>
+					<xvalue>100.0</xvalue>
 					<yvalue>100.0</yvalue>
 				</point>
 				<point>
-					<xvalue>120.0</xvalue>
+					<xvalue>110.0</xvalue>
 					<yvalue>110.0</yvalue>
 				</point>
 			</coordinates>
@@ -1869,11 +1898,11 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue>110.0</xvalue>
+							<xvalue>100.0</xvalue>
 							<yvalue>100.0</yvalue>
 						</point>
 						<point>
-							<xvalue>111.0</xvalue>
+							<xvalue>101.0</xvalue>
 							<yvalue>110.0</yvalue>
 						</point>
 					</coordinates>
@@ -1883,17 +1912,19 @@
 				<wall>
 					<coordinates>
 						<point>
-							<xvalue>120.0</xvalue>
+							<xvalue>110.0</xvalue>
 							<yvalue>100.0</yvalue>
 						</point>
 						<point>
-							<xvalue>119.0</xvalue>
+							<xvalue>109.0</xvalue>
 							<yvalue>110.0</yvalue>
 						</point>
 					</coordinates>
 				
 					</wall>					
 			</components>
+			<leaving>N08</leaving>
+			<arriving>N11</arriving>
 		</edge>
 
 		<edge id="E16">
@@ -1938,6 +1969,8 @@
 					
 				</wall>		
 			</components>
+			<leaving>N12</leaving>
+			<arriving>N06</arriving>
 		</edge>
 
 		<edge id="E17">
@@ -1982,6 +2015,8 @@
 					
 				</wall>		
 			</components>
+			<leaving>N11</leaving>
+			<arriving>N12</arriving>
 		</edge>
 
 		<edge id="E18">
@@ -2026,6 +2061,8 @@
 					
 				</wall>		
 			</components>
+			<leaving>N12</leaving>
+			<arriving>N08</arriving>
 		</edge>
 
 		<edge id="E19">
@@ -2070,6 +2107,8 @@
 					
 				</wall>		
 			</components>
+			<leaving>N14</leaving>
+			<arriving>N12</arriving>
 		</edge>
 
 		<edge id="E20">
@@ -2087,6 +2126,8 @@
 
 			<components>
 			</components>
+			<leaving>N12</leaving>
+			<arriving>N13</arriving>
 		</edge>
 
 		<edge id="E21">
@@ -2131,6 +2172,8 @@
 					
 				</wall>		
 			</components>
+			<leaving>N12</leaving>
+			<arriving>N15</arriving>
 		</edge>
 
 		<edge id="E22">
@@ -2148,5 +2191,7 @@
 
 			<components>		
 			</components>
+			<leaving>N16</leaving>
+			<arriving>N12</arriving>
 		</edge>	
 </graph>

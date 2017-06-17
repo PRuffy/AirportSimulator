@@ -18,7 +18,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
 @SarlElementType(8)
 @SuppressWarnings("all")
 public class GraphNode {
-  private ArrayList<GraphEdge> arrivingEdges;
+  private ArrayList<GraphEdge> incomingEdges;
   
   private ArrayList<GraphEdge> leavingEdges;
   
@@ -35,7 +35,7 @@ public class GraphNode {
     this.staticObject = null;
     this.surface = null;
     this.leavingEdges = null;
-    this.arrivingEdges = null;
+    this.incomingEdges = null;
     this.name = null;
   }
   
@@ -50,6 +50,23 @@ public class GraphNode {
   public Rectangle2f defineSurface(final Point2f p1, final Point2f p2) {
     Rectangle2f _rectangle2f = new Rectangle2f(p1, p2);
     return this.surface = _rectangle2f;
+  }
+  
+  @Pure
+  public String getId() {
+    return this.id;
+  }
+  
+  public boolean addLeavingEdge(final GraphEdge e) {
+    return this.leavingEdges.add(e);
+  }
+  
+  public boolean addIncomingEdge(final GraphEdge e) {
+    return this.incomingEdges.add(e);
+  }
+  
+  public void printProperty() {
+    System.out.println(("id :" + this.id));
   }
   
   @Override

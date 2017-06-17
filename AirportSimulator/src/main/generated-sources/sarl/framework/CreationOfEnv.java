@@ -96,6 +96,14 @@ public class CreationOfEnv {
             Point2f _point2f_1 = new Point2f((x2).floatValue(), (y2).floatValue());
             point2 = _point2f_1;
             graphEdge.defineSurface(point1, point2);
+            String departureNode = null;
+            String arrivingNode = null;
+            departureNode = eElement.getElementsByTagName("leaving").item(0).getTextContent();
+            System.out.println(eElement.getAttribute("id"));
+            System.out.println(eElement.getElementsByTagName("leaving").item(0).getTextContent());
+            graphEdge.addDepartureNode(graph.getNode(departureNode));
+            arrivingNode = eElement.getElementsByTagName("arriving").item(0).getTextContent();
+            graphEdge.addArrivalNode(graph.getNode(arrivingNode));
             graph.addEdge(graphEdge);
           }
         }

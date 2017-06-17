@@ -7,6 +7,7 @@ import framework.math.Rectangle2f
 import framework.math.Point2f
 import java.util.ArrayList
 import framework.math.Shape2f
+import java.lang.ref.WeakReference
 
 /** 
  * @author stay
@@ -23,7 +24,6 @@ class GraphEdge {
 	new (){
 		departureNode = null;
 		arrivalNode = null;
-		surface = null
 		id = null
 		name = null
 		staticObject = null
@@ -41,5 +41,18 @@ class GraphEdge {
 		surface = new Rectangle2f(p1, p2)
 		
 	}
+	
+	def addDepartureNode(n : GraphNode){
+		departureNode = n
+	}
+	
+	def addArrivalNode(n : GraphNode){
+		arrivalNode = n
+	}
+	
+	def printLeaving(){
+		departureNode.printProperty()
+	}
+	
 	
 }

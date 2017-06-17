@@ -1,0 +1,144 @@
+/** 
+ * 
+ */
+package framework
+
+import framework.environment.Graph
+import framework.environment.SituatedObject
+import framework.environment.QuadTree
+import javax.xml.parsers.DocumentBuilderFactory
+import javax.xml.parsers.DocumentBuilder
+import org.w3c.dom.Document
+import org.w3c.dom.Element
+import org.w3c.dom.NodeList
+import org.w3c.dom.Node
+import framework.environment.GraphNode
+import framework.math.Point2f
+import framework.environment.GraphEdge
+
+/** 
+ * @author stay
+ * 
+ */
+class CreationOfEnv {
+	def createGraph(filename : String, graph : Graph, objTree : QuadTree<SituatedObject>){
+		try{
+			
+			//Initialisation du lecteur de xml
+			var dbFactory : DocumentBuilderFactory
+			dbFactory = DocumentBuilderFactory.newInstance()
+			
+			var dBuilder : DocumentBuilder
+			dBuilder = dbFactory.newDocumentBuilder()
+			
+			var doc : Document
+			doc = dBuilder.parse(filename)
+			
+			doc.getDocumentElement().normalize()
+			
+			var nodeList : NodeList
+			nodeList = doc.getElementsByTagName("node")//Récupération des information sur les nodes
+			
+			var edgeList : NodeList
+			edgeList =  doc.getElementsByTagName("edge")//Récupération des information sur les edges
+			
+			
+			var i : int
+			//Travail sur les node
+			for(i=0; i<nodeList.getLength;i++){
+				//Récupération d'un bloc <node></nodes>
+				var node : Node
+				node = nodeList.item(i)
+				
+				if(node.getNodeType()=== Node.ELEMENT_NODE){
+					var graphNode = new GraphNode()
+
+					var eElement : Element
+					eElement = node as Element
+					
+					graphNode.setId(eElement.getAttribute("id").toString())
+					graphNode.setName(eElement.getElementsByTagName("name").item(0).getTextContent().toString)
+					
+					//Obtenir les coordonées de la zone couverte par le node
+					var eCoordinate : NodeList
+					eCoordinate = eElement.getElementsByTagName("coordinates")
+					var ePoints = eCoordinate.item(0) as Element
+					
+					var x1 = Float.valueOf(ePoints.getElementsByTagName("xvalue").item(0).getTextContent().toString)
+					var y1 = Float.valueOf(ePoints.getElementsByTagName("yvalue").item(0).getTextContent().toString)
+					var point1 : Point2f
+					point1 = new Point2f(x1, y1)
+
+					var x2 = Float.valueOf(ePoints.getElementsByTagName("xvalue").item(1).getTextContent().toString)
+					var y2 = Float.valueOf(ePoints.getElementsByTagName("yvalue").item(1).getTextContent().toString)
+					var point2 : Point2f
+					point2 = new Point2f(x2, y2)
+					
+					graphNode.defineSurface(point1,point2)
+					
+					//créer les composant présent dans le noeuds
+					
+					
+					
+					graph.addNode(graphNode)
+					graph.printNode()
+				}
+			}
+			
+			//Création des edges
+			for (i = 0; i < edgeList.getLength(); i++) {
+				// Récupération d'un bloc <node></nodes>
+				var edge : Node
+				edge = edgeList.item(i)
+
+				if (edge.getNodeType() === Node.ELEMENT_NODE) {
+					var graphEdge = new GraphEdge()
+
+					var eElement : Element
+					eElement = edge as Element
+
+					graphEdge.setId(eElement.getAttribute("id").toString())
+					graphEdge.setName(eElement.getElementsByTagName("name").item(0).getTextContent().toString)
+					
+					// Obtenir les coordonées de la zone couverte par le node
+					var eCoordinate : NodeList
+					eCoordinate = eElement.getElementsByTagName("coordinates")
+					var ePoints = eCoordinate.item(0) as Element
+
+					var x1 = Float.valueOf(ePoints.getElementsByTagName("xvalue").item(0).getTextContent().toString)
+					var y1 = Float.valueOf(ePoints.getElementsByTagName("yvalue").item(0).getTextContent().toString)
+					var point1 : Point2f
+					point1 = new Point2f(x1, y1)
+
+					var x2 = Float.valueOf(ePoints.getElementsByTagName("xvalue").item(1).getTextContent().toString)
+					var y2 = Float.valueOf(ePoints.getElementsByTagName("yvalue").item(1).getTextContent().toString)
+					var point2 : Point2f
+					point2 = new Point2f(x2, y2)
+
+					graphEdge.defineSurface(point1, point2)
+
+					// créer les composant présent dans l'arx
+					
+					//faire le liens entre edge et noeuds
+					var departureNode : String
+					var arrivingNode : String
+					
+					departureNode = eElement.getElementsByTagName("leaving").item(0).getTextContent()
+					var node = graph.getNode(departureNode)
+					System.out.println(node.printProperty)
+					arrivingNode = eElement.getElementsByTagName("arriving").item(0).getTextContent()
+					graphEdge.addArrivalNode(graph.getNode(arrivingNode))
+					graphEdge.printLeaving()
+				
+					
+					
+					graph.addEdge(graphEdge)
+				}
+			}
+			
+		}catch(e : Exception){
+			e.printStackTrace()
+		}
+		
+	}
+}

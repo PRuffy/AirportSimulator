@@ -26,4 +26,19 @@ class Graph {
 		edgeList.add(edge)
 	}
 	
+	def printNode(){
+		for(n as GraphNode : nodeList){
+			System.out.println(n.getId())
+		}
+	}
+	
+	def getNode(id : String):GraphNode{
+		for(n as GraphNode : nodeList){
+			if (n.getId() === id){
+				return n
+			}	
+		}
+		
+	}
+	
 }

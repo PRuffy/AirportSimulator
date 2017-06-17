@@ -34,6 +34,24 @@ public class Graph {
     return this.edgeList.add(edge);
   }
   
+  public void printNode() {
+    for (final GraphNode n : this.nodeList) {
+      System.out.println(n.getId());
+    }
+  }
+  
+  @Pure
+  public GraphNode getNode(final String id) {
+    for (final GraphNode n : this.nodeList) {
+      String _id = n.getId();
+      boolean _tripleEquals = (_id == id);
+      if (_tripleEquals) {
+        return n;
+      }
+    }
+    return null;
+  }
+  
   @Override
   @Pure
   @SyntheticMember

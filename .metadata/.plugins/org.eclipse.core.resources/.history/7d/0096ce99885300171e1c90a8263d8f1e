@@ -1,0 +1,45 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.ArrayList
+
+/** 
+ * @author stay
+ * 
+ */
+class Graph {
+	var nodeList : ArrayList<GraphNode>
+	var edgeList : ArrayList<GraphEdge>
+
+	new(){
+		nodeList = new ArrayList<GraphNode>
+		edgeList = new ArrayList<GraphEdge>
+	}
+	
+	def addNode(node : GraphNode){
+		nodeList.add(node)
+	}
+	
+	def addEdge(edge : GraphEdge){
+		edgeList.add(edge)
+	}
+	
+	def printNode(){
+		for(n as GraphNode : nodeList){
+			System.out.println(n.getId())
+		}
+	}
+	
+	def getNode(id : String):GraphNode{
+		var node : GraphNode
+		for(n as GraphNode : nodeList){
+			if (n.id === id){
+				node = n
+			}	
+		}
+		return node
+	}
+	
+}
