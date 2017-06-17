@@ -35,6 +35,7 @@ import framework.util.LocalizedString;
 import io.sarl.lang.annotation.DefaultValue;
 import io.sarl.lang.annotation.DefaultValueSource;
 import io.sarl.lang.annotation.DefaultValueUse;
+import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSourceCode;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
@@ -51,6 +52,7 @@ import org.eclipse.xtext.xbase.lib.StringExtensions;
  * @version $Name$ $Revision$ $Date$
  */
 @SarlSpecification("0.5")
+@SarlElementType(8)
 @SuppressWarnings("all")
 public class AgentBody extends AbstractMobileObject implements Body {
   private final Frustum frustum;
@@ -373,33 +375,6 @@ public class AgentBody extends AbstractMobileObject implements Body {
   @Pure
   @SyntheticMember
   public boolean equals(final Object obj) {
-    if (this == obj)
-      return true;
-    if (obj == null)
-      return false;
-    if (getClass() != obj.getClass())
-      return false;
-    AgentBody other = (AgentBody) obj;
-    if (this.frustum == null) {
-      if (other.frustum != null)
-        return false;
-    } else if (!this.frustum.equals(other.frustum))
-      return false;
-    if (this.motionInfluence == null) {
-      if (other.motionInfluence != null)
-        return false;
-    } else if (!this.motionInfluence.equals(other.motionInfluence))
-      return false;
-    if (this.otherInfluences == null) {
-      if (other.otherInfluences != null)
-        return false;
-    } else if (!this.otherInfluences.equals(other.otherInfluences))
-      return false;
-    if (this.perceptions == null) {
-      if (other.perceptions != null)
-        return false;
-    } else if (!this.perceptions.equals(other.perceptions))
-      return false;
     return super.equals(obj);
   }
   
@@ -407,12 +382,7 @@ public class AgentBody extends AbstractMobileObject implements Body {
   @Pure
   @SyntheticMember
   public int hashCode() {
-    final int prime = 31;
     int result = super.hashCode();
-    result = prime * result + ((this.frustum== null) ? 0 : this.frustum.hashCode());
-    result = prime * result + ((this.motionInfluence== null) ? 0 : this.motionInfluence.hashCode());
-    result = prime * result + ((this.otherInfluences== null) ? 0 : this.otherInfluences.hashCode());
-    result = prime * result + ((this.perceptions== null) ? 0 : this.perceptions.hashCode());
     return result;
   }
   

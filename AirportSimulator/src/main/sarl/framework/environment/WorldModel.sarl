@@ -17,6 +17,7 @@ class WorldModel extends AbstractEnvironment implements WorldModelStateProvider 
 	
 	var objTree : QuadTree<SituatedObject>
 	var graph : Graph
+	var agentBodies : ArrayList<AgentBody>
 	
 	protected override onAgentBodyCreated(body : AgentBody) {
 		throw new UnsupportedOperationException("TODO: auto-generated method stub")

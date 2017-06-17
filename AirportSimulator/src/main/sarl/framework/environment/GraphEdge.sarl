@@ -50,6 +50,10 @@ class GraphEdge {
 		arrivalNode = n
 	}
 	
+	def getId():String{
+		return id
+	}
+	
 	def printLeaving(){
 		departureNode.printProperty()
 	}

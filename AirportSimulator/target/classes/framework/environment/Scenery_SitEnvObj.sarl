@@ -13,10 +13,7 @@ import framework.math.Point2f
  */
 abstract class Scenery_SitEnvObj extends AbstractSituatedObject
 {
-	new (id : UUID, shape : Shape2f<?>, position : Point2f = null, name : String)
-	{
-		super (id, shape, position, name);
-	}
+
 }
 
 class Wall extends Scenery_SitEnvObj
@@ -27,3 +24,10 @@ class Wall extends Scenery_SitEnvObj
 	}
 }
 
+class Door extends Scenery_SitEnvObj
+{
+	new (id : UUID, shape : Shape2f<?>, position : Point2f = null, name : String)
+	{
+		super(id, shape, position, name);
+	}
+}

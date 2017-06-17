@@ -21,6 +21,7 @@
 package framework.util;
 
 import framework.environment.AgentBody;
+import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import io.sarl.lang.core.Agent;
@@ -33,6 +34,7 @@ import org.eclipse.xtext.xbase.lib.Inline;
  * @version $Name$ $Revision$ $Date$
  */
 @SarlSpecification("0.5")
+@SarlElementType(8)
 @SuppressWarnings("all")
 public abstract class SpawnMapping {
   /**

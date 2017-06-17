@@ -6,6 +6,7 @@ import framework.math.Shape2f;
 import io.sarl.lang.annotation.DefaultValue;
 import io.sarl.lang.annotation.DefaultValueSource;
 import io.sarl.lang.annotation.DefaultValueUse;
+import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSourceCode;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
@@ -13,6 +14,7 @@ import java.util.UUID;
 import org.eclipse.xtext.xbase.lib.Pure;
 
 @SarlSpecification("0.5")
+@SarlElementType(8)
 @SuppressWarnings("all")
 public class Wall extends Scenery_SitEnvObj {
   @DefaultValueSource

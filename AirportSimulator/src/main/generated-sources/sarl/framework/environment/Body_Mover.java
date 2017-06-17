@@ -3,6 +3,7 @@ package framework.environment;
 import framework.environment.AgentBody;
 import framework.environment.Frustum;
 import framework.math.Shape2f;
+import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import java.util.UUID;
@@ -12,6 +13,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @author promet
  */
 @SarlSpecification("0.5")
+@SarlElementType(8)
 @SuppressWarnings("all")
 public abstract class Body_Mover extends AgentBody {
   @Override

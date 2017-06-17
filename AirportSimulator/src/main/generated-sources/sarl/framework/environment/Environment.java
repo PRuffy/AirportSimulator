@@ -24,6 +24,7 @@ import framework.environment.AgentBody;
 import framework.environment.EnvironmentListener;
 import framework.environment.SituatedObject;
 import framework.time.TimeManager;
+import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import java.util.UUID;
 
@@ -34,6 +35,7 @@ import java.util.UUID;
  * @version $Name$ $Revision$ $Date$
  */
 @SarlSpecification("0.5")
+@SarlElementType(9)
 @SuppressWarnings("all")
 public interface Environment {
   /**

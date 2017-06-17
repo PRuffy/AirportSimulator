@@ -27,6 +27,7 @@ import framework.math.Rectangle2f;
 import framework.math.Shape2f;
 import framework.math.Vector2f;
 import framework.time.TimeManager;
+import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
 import java.util.UUID;
@@ -39,6 +40,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
  * @version $Name$ $Revision$ $Date$
  */
 @SarlSpecification("0.5")
+@SarlElementType(8)
 @SuppressWarnings("all")
 public abstract class AbstractMobileObject extends AbstractSituatedObject implements MobileObject {
   private final float maxLinearSpeed;
@@ -420,11 +422,6 @@ public abstract class AbstractMobileObject extends AbstractSituatedObject implem
       return false;
     if (Float.floatToIntBits(other.currentAngularSpeed) != Float.floatToIntBits(this.currentAngularSpeed))
       return false;
-    if (this.linearMove == null) {
-      if (other.linearMove != null)
-        return false;
-    } else if (!this.linearMove.equals(other.linearMove))
-      return false;
     return super.equals(obj);
   }
   
@@ -432,15 +429,14 @@ public abstract class AbstractMobileObject extends AbstractSituatedObject implem
   @Pure
   @SyntheticMember
   public int hashCode() {
-    final int prime = 31;
     int result = super.hashCode();
+    final int prime = 31;
     result = prime * result + Float.floatToIntBits(this.maxLinearSpeed);
     result = prime * result + Float.floatToIntBits(this.maxLinearAcceleration);
     result = prime * result + Float.floatToIntBits(this.maxAngularSpeed);
     result = prime * result + Float.floatToIntBits(this.maxAngularAcceleration);
     result = prime * result + Float.floatToIntBits(this.angle);
     result = prime * result + Float.floatToIntBits(this.currentAngularSpeed);
-    result = prime * result + ((this.linearMove== null) ? 0 : this.linearMove.hashCode());
     return result;
   }
   

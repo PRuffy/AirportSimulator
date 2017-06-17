@@ -122,16 +122,10 @@ class CreationOfEnv {
 					var arrivingNode : String
 					
 					departureNode = eElement.getElementsByTagName("leaving").item(0).getTextContent()
-					System.out.println(eElement.getAttribute("id"))
-					System.out.println(eElement.getElementsByTagName("leaving").item(0).getTextContent())
-					graphEdge.addDepartureNode(graph.getNode(departureNode))
-					arrivingNode = eElement.getElementsByTagName("arriving").item(0).getTextContent()
-					graphEdge.addArrivalNode(graph.getNode(arrivingNode))
-	
-				
-					
+					arrivingNode = eElement.getElementsByTagName("arriving").item(0).getTextContent()				
 					
 					graph.addEdge(graphEdge)
+					graph.setEdgeAndNodes(graphEdge.getId(), departureNode, arrivingNode)
 				}
 			}
 			

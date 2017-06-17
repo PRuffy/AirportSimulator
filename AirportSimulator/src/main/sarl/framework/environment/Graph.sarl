@@ -32,11 +32,18 @@ class Graph {
 		}
 	}
 	
+	def setEdgeAndNode(edgeId : String, departureNodeId : String, arrivingNodeId : String){
+		var node1 = new GraphNode()
+		var node2 = new GraphNode()		
+		var edge = new GraphEdge()
+		
+		node1 = 
+	}
+	
 	def getNode(id : String):GraphNode{
+		var n : GraphNode
 		for(n as GraphNode : nodeList){
-			if (n.getId() === id){
-				return n
-			}	
+			n.printProperty()
 		}
 		
 	}
