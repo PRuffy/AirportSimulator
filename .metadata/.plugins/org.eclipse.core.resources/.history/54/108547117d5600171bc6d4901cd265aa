@@ -1,0 +1,36 @@
+/** 
+ * 
+ */
+package framework
+
+import framework.environment.QuadTree
+import framework.environment.Graph
+import framework.environment.SituatedObject
+import framework.math.Point2f
+import framework.math.Rectangle2f
+import framework.environment.WorldModel
+
+/** 
+ * @author stay
+ * 
+ */
+class MainProgram {
+	static val WORLD_SIZE_X = 200f
+	static val WORLD_SIZE_Y = 200f
+	static val filename = "res/graphInfo.xml"
+	
+	static def main (argv : String*){
+		var graph = new Graph
+		var objTree : QuadTree<SituatedObject>
+		objTree = new QuadTree(new Rectangle2f(new Point2f(0,0),new Point2f(WORLD_SIZE_X,WORLD_SIZE_Y)))
+		var envInit : CreationOfEnv
+		envInit = new CreationOfEnv
+		
+		var environment = new WorldModel(WORLD_SIZE_X, WORLD_SIZE_Y)
+		
+		envInit.createGraph(filename, graph, objTree)
+		
+		System.out.println("fin")
+	}
+	
+}

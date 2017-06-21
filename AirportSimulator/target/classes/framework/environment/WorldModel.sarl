@@ -9,6 +9,9 @@ import framework.time.TimeManager
 import framework.gui.WorldModelStateProvider
 import framework.math.Point2f
 import java.util.ArrayList
+import framework.time.StepTimeManager
+import framework.math.Rectangle2f
+import framework.CreationOfEnv
 
 /** 
  * @author stay
@@ -19,7 +22,16 @@ class WorldModel extends AbstractEnvironment implements WorldModelStateProvider 
 	var objTree : QuadTree<SituatedObject>
 	var graph : Graph
 	var agentBodies : ArrayList<AgentBody>
-	
+
+	new (width : float, height : float, filename : String) {
+		super(width, height, new StepTimeManager(500))
+		this.objTree = new QuadTree(new Rectangle2f(0, 0, width, height))
+		graph = new Graph
+		var envInit : CreationOfEnv
+		envInit = new CreationOfEnv
+		envInit.createGraph(filename, graph, objTree)
+
+	}
 	protected override onAgentBodyCreated(body : AgentBody) {
 		throw new UnsupportedOperationException("TODO: auto-generated method stub")
 	}
