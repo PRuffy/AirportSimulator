@@ -1,0 +1,196 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import framework.environment.ShapedObject
+import framework.math.Rectangle2f
+import framework.math.Shape2f
+import java.lang.ref.WeakReference
+import java.util.ArrayList
+import java.util.Iterator
+import java.util.LinkedList
+import java.util.List
+import java.util.Stack
+import framework.environment.Frustum
+import framework.math.Point2f
+import framework.math.Vector2f
+
+class QuadTree<T extends ShapedObject> {
+	var root : QuadTreeNode<T>
+
+	new(box : Rectangle2f) {
+		this.root = new QuadTreeNode(box)
+	}
+
+	def getRoot() : QuadTreeNode<T> {
+		root
+	}
+
+	def frustumIterator(frustum : Frustum, position : Point2f, orientation : Vector2f) : Iterator<T> {
+		var geometricFrustum = frustum.toShape(position, orientation)
+		return new FrustumIterator(this, geometricFrustum)
+	}
+
+	def add(o : T) {
+		this.root.add(o)
+	}
+
+}
+
+class QuadTreeNode<T extends ShapedObject> {
+	val box : Rectangle2f
+	var objects : LinkedList<T>
+
+	val parent : WeakReference<QuadTreeNode<T>>
+	var children : List<QuadTreeNode<T>>
+
+	new (parent : QuadTreeNode = null, box : Rectangle2f) {
+		if (parent !== null) {
+			this.parent = new WeakReference(parent)
+		} else {
+			this.parent = null
+		}
+
+		this.box = box
+	}
+
+	// Getter
+	def getParent() : QuadTreeNode<T> {
+		this.parent?.get
+	}
+
+	def getBox() : Rectangle2f {
+		this.box
+	}
+
+	def getObjects : LinkedList<T> {
+		this.objects
+	}
+
+	def getChildren : List<QuadTreeNode<T>> {
+		this.children
+	}
+
+	// Factory
+	def add(o : T) : QuadTreeNode<T> {
+		if (children === null) {
+			var n : QuadTreeNode<T>
+			if (objects.size + 1 <= 10) {
+				objects += o
+				n = this
+			} else {
+				createChildren()
+				var old = objects
+				objects = new LinkedList
+
+				for (obj : old) {
+					var x = obj.pushInBranch
+					if (x === null) {
+						objects += obj
+					}
+				}
+
+				n = o.pushInBranch
+				if (n === null) {
+					n = this
+					objects += o
+				}
+			}
+			return n
+
+		} else {
+			var n = o.pushInBranch
+			if (n === null) {
+				objects += o
+				n = this
+			}
+			return n
+		}
+
+	}
+
+	private def pushInBranch(o : T) : QuadTreeNode<T> {
+		var ns = new ArrayList
+		for (c : children) {
+			if (o.shape.intersects(c.box)) {
+				ns += c
+			}
+		}
+		if (ns.size === 1) {
+			return ns.get(0).add(o)
+		}
+
+		return null
+	}
+
+	private def createChildren {
+		this.children = new ArrayList(4)
+		for (i : 0 .. 3) {
+			this.children.add(new QuadTreeNode(this, computeChildBox(i)))
+		}
+	}
+
+	private def computeChildBox(i : int) : Rectangle2f {
+		var center = this.box.center
+		switch (i) {
+			case 0:
+				return new Rectangle2f(this.box.lower, center)
+			case 1:
+				return new Rectangle2f(center.x, this.box.lower.y, this.box.upper.x, center.y)
+			case 2:
+				return new Rectangle2f(this.box.lower.x, center.y, center.x, this.box.upper.y)
+			case 3:
+				return new Rectangle2f(center, this.box.upper)
+		}
+	}
+}
+
+class FrustumIterator<T extends ShapedObject> implements Iterator<T> {
+
+	val frustum : Shape2f<?>
+	var nextObject : T
+	val stack = new Stack<QuadTreeNode<T>>
+	val buffer = new LinkedList<T>
+
+	new(tree : QuadTree<T>, fr : Shape2f<?>) {
+		this.frustum = fr
+		this.stack += tree.root
+		searchNext
+
+	}
+
+	override hasNext : boolean {
+		nextObject !== null
+	}
+
+	override next : T {
+		var n = nextObject
+		searchNext
+		return n
+	}
+
+	private def searchNext {
+		nextObject = null
+
+		while (buffer.empty && !stack.empty()) {
+			var node = stack.pop
+
+			if (frustum.intersects(node.box)) {
+				for (c : node.children) {
+					stack += c
+				}
+
+				for (o : node.objects) {
+					if (frustum.intersects(o.shape)) {
+						buffer += o
+					}
+				}
+			}
+		}
+
+		if (!buffer.empty) {
+			nextObject = buffer.removeFirst
+		}
+	}
+}

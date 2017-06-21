@@ -53,6 +53,7 @@ class QuadTreeNode<T extends ShapedObject> {
 		}
 
 		this.box = box
+		objects = new LinkedList()
 	}
 
 	// Getter

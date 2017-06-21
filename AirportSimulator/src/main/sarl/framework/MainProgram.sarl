@@ -6,6 +6,8 @@ package framework
 import framework.environment.QuadTree
 import framework.environment.Graph
 import framework.environment.SituatedObject
+import framework.math.Point2f
+import framework.math.Rectangle2f
 
 /** 
  * @author stay
@@ -19,6 +21,7 @@ class MainProgram {
 	static def main (argv : String*){
 		var graph = new Graph
 		var objTree : QuadTree<SituatedObject>
+		objTree = new QuadTree(new Rectangle2f(new Point2f(0,0),new Point2f(WORLD_SIZE_X,WORLD_SIZE_Y)))
 		var envInit : CreationOfEnv
 		envInit = new CreationOfEnv
 		

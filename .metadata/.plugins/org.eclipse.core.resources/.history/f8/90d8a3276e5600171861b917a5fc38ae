@@ -1,0 +1,30 @@
+/** 
+ * 
+ */
+package framework
+
+import framework.environment.QuadTree
+import framework.environment.Graph
+import framework.environment.SituatedObject
+
+/** 
+ * @author stay
+ * 
+ */
+class MainProgram {
+	static val WORLD_SIZE_X = 200f
+	static val WORLD_SIZE_Y = 200f
+	static val filename = "res/graphInfo.xml"
+	
+	static def main (argv : String*){
+		var graph = new Graph
+		var objTree = new QuadTree()
+		var envInit : CreationOfEnv
+		envInit = new CreationOfEnv
+		
+		envInit.createGraph(filename, graph, objTree)
+		
+		System.out.println("fin")
+	}
+	
+}

@@ -1,0 +1,62 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import framework.math.Rectangle2f
+import framework.math.Point2f
+import java.util.ArrayList
+import framework.math.Shape2f
+import java.lang.ref.WeakReference
+
+/** 
+ * @author stay
+ * 
+ */
+class GraphEdge {
+	var departureNode : GraphNode
+	var arrivalNode : GraphNode
+	var id : String
+	var surface : Rectangle2f
+	var staticObject : ArrayList<Shape2f<?>>
+	var name : String
+	
+	new (){
+		departureNode = null;
+		arrivalNode = null;
+		id = null
+		name = null
+		staticObject = null
+	}
+
+	def setId(id : String) {
+		this.id = id
+	}
+	
+	def setName(name : String){
+		this.name = name
+	}
+
+	def defineSurface(p1 : Point2f, p2 : Point2f) {
+		surface = new Rectangle2f(p1, p2)
+		
+	}
+	
+	def addDepartureNode(n : GraphNode){
+		departureNode = n
+	}
+	
+	def addArrivalNode(n : GraphNode){
+		arrivalNode = n
+	}
+	
+	def getId():String{
+		return id
+	}
+	
+	def printLeaving(){
+		departureNode.printProperty()
+	}
+	
+	
+}

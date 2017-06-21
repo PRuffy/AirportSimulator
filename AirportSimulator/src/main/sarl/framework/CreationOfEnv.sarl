@@ -15,6 +15,9 @@ import org.w3c.dom.Node
 import framework.environment.GraphNode
 import framework.math.Point2f
 import framework.environment.GraphEdge
+import framework.math.Rectangle2f
+import framework.environment.Wall
+import java.util.UUID
 
 /** 
  * @author stay
@@ -78,6 +81,32 @@ class CreationOfEnv {
 					
 					//créer les composant présent dans le noeuds
 					
+					var eWall : NodeList
+					eWall = eElement.getElementsByTagName("wall")
+					var j : int
+					for(j = 0;j<eWall.getLength();j++){
+						var wall = eWall.item(j)
+						if (wall.getNodeType() === Node.ELEMENT_NODE) {
+							var eWallCoordinate : NodeList
+							eWallCoordinate = eElement.getElementsByTagName("coordinates")
+							var eWallPoints = eCoordinate.item(0) as Element
+
+							var wallX1 = Float.valueOf(eWallPoints.getElementsByTagName("xvalue").item(0).getTextContent().toString)
+							var wallY1 = Float.valueOf(eWallPoints.getElementsByTagName("yvalue").item(0).getTextContent().toString)
+							var wallPoint1 : Point2f
+							wallPoint1 = new Point2f(wallX1, wallY1)
+
+							var wallX2 = Float.valueOf(eWallPoints.getElementsByTagName("xvalue").item(1).getTextContent().toString)
+							var wallY2 = Float.valueOf(eWallPoints.getElementsByTagName("yvalue").item(1).getTextContent().toString)
+							var wallPoint2 : Point2f
+							wallPoint2 = new Point2f(wallX2, wallY2)
+							
+							var objWall = new Wall(UUID.randomUUID, new Rectangle2f(wallPoint1, wallPoint2), null, "wall")
+							graphNode.addWall(objWall)
+							objTree.add(objWall)
+						}
+					}
+					
 					graph.addNode(graphNode)
 			
 				}
@@ -115,8 +144,37 @@ class CreationOfEnv {
 
 					graphEdge.defineSurface(point1, point2)
 
-					// créer les composant présent dans l'arx
-					
+					// créer les composant présent dans l'arc
+					var eWall : NodeList
+					eWall = eElement.getElementsByTagName("wall")
+					var j : int
+					for (j = 0; j < eWall.getLength(); j++) {
+						var wall = eWall.item(j)
+						if (wall.getNodeType() === Node.ELEMENT_NODE) {
+							var eWallCoordinate : NodeList
+							eWallCoordinate = eElement.getElementsByTagName("coordinates")
+							var eWallPoints = eCoordinate.item(0) as Element
+
+							var wallX1 = Float.valueOf(
+								eWallPoints.getElementsByTagName("xvalue").item(0).getTextContent().toString)
+							var wallY1 = Float.valueOf(
+								eWallPoints.getElementsByTagName("yvalue").item(0).getTextContent().toString)
+							var wallPoint1 : Point2f
+							wallPoint1 = new Point2f(wallX1, wallY1)
+
+							var wallX2 = Float.valueOf(
+								eWallPoints.getElementsByTagName("xvalue").item(1).getTextContent().toString)
+							var wallY2 = Float.valueOf(
+								eWallPoints.getElementsByTagName("yvalue").item(1).getTextContent().toString)
+							var wallPoint2 : Point2f
+							wallPoint2 = new Point2f(wallX2, wallY2)
+
+							var objWall = new Wall(UUID.randomUUID, new Rectangle2f(wallPoint1, wallPoint2), null,
+								"wall")
+							objTree.add(objWall)
+							graphEdge.addWall(objWall)
+						}
+					}
 					//faire le liens entre edge et noeuds
 					var departureNode : String
 					var arrivingNode : String
@@ -125,7 +183,7 @@ class CreationOfEnv {
 					arrivingNode = eElement.getElementsByTagName("arriving").item(0).getTextContent()				
 					
 					graph.addEdge(graphEdge)
-					graph.setEdgeAndNodes(graphEdge.getId(), departureNode, arrivingNode)
+					graph.setEdgeAndNode(graphEdge.getId(), departureNode, arrivingNode)
 				}
 			}
 			

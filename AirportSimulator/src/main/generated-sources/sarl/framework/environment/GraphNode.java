@@ -1,9 +1,9 @@
 package framework.environment;
 
 import framework.environment.GraphEdge;
+import framework.environment.Wall;
 import framework.math.Point2f;
 import framework.math.Rectangle2f;
-import framework.math.Shape2f;
 import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
@@ -18,13 +18,11 @@ import org.eclipse.xtext.xbase.lib.Pure;
 @SarlElementType(8)
 @SuppressWarnings("all")
 public class GraphNode {
-  private ArrayList<GraphEdge> incomingEdges;
-  
   private ArrayList<GraphEdge> leavingEdges;
   
   private Rectangle2f surface;
   
-  private ArrayList<Shape2f<?>> staticObject;
+  private ArrayList<Wall> staticObject;
   
   private String id;
   
@@ -32,10 +30,11 @@ public class GraphNode {
   
   public GraphNode() {
     this.id = null;
-    this.staticObject = null;
+    ArrayList<Wall> _arrayList = new ArrayList<Wall>();
+    this.staticObject = _arrayList;
     this.surface = null;
-    this.leavingEdges = null;
-    this.incomingEdges = null;
+    ArrayList<GraphEdge> _arrayList_1 = new ArrayList<GraphEdge>();
+    this.leavingEdges = _arrayList_1;
     this.name = null;
   }
   
@@ -61,12 +60,8 @@ public class GraphNode {
     return this.leavingEdges.add(e);
   }
   
-  public boolean addIncomingEdge(final GraphEdge e) {
-    return this.incomingEdges.add(e);
-  }
-  
-  public void printProperty() {
-    System.out.println(("id :" + this.id));
+  public boolean addWall(final Wall w) {
+    return this.staticObject.add(w);
   }
   
   @Override

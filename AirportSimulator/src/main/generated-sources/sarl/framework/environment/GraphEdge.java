@@ -1,9 +1,9 @@
 package framework.environment;
 
 import framework.environment.GraphNode;
+import framework.environment.Wall;
 import framework.math.Point2f;
 import framework.math.Rectangle2f;
-import framework.math.Shape2f;
 import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
@@ -26,7 +26,7 @@ public class GraphEdge {
   
   private Rectangle2f surface;
   
-  private ArrayList<Shape2f<?>> staticObject;
+  private ArrayList<Wall> staticObject;
   
   private String name;
   
@@ -35,7 +35,8 @@ public class GraphEdge {
     this.arrivalNode = null;
     this.id = null;
     this.name = null;
-    this.staticObject = null;
+    ArrayList<Wall> _arrayList = new ArrayList<Wall>();
+    this.staticObject = _arrayList;
   }
   
   public String setId(final String id) {
@@ -64,8 +65,8 @@ public class GraphEdge {
     return this.id;
   }
   
-  public void printLeaving() {
-    this.departureNode.printProperty();
+  public boolean addWall(final Wall w) {
+    return this.staticObject.add(w);
   }
   
   @Override

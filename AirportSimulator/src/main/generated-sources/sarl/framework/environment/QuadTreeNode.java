@@ -38,6 +38,8 @@ public class QuadTreeNode<T extends ShapedObject> {
       this.parent = null;
     }
     this.box = box;
+    LinkedList<T> _linkedList = new LinkedList<T>();
+    this.objects = _linkedList;
   }
   
   /**

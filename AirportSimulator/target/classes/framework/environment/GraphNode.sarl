@@ -4,29 +4,26 @@
 package framework.environment
 
 import java.util.ArrayList
-import framework.math.Shape2f
 import framework.math.Point2f
 import framework.math.Rectangle2f
-import java.lang.ref.WeakReference
+
 
 /** 
  * @author stay
  * 
  */
 class GraphNode {
-	var incomingEdges :ArrayList<GraphEdge>
 	var leavingEdges : ArrayList<GraphEdge>
 	var surface : Rectangle2f
-	var staticObject : ArrayList<Shape2f<?>>
+	var staticObject : ArrayList<Wall>
 	var id : String
 	var name : String
 	
 	new (){
 		id = null
-		staticObject = null
+		staticObject = new ArrayList()
 		surface = null
-		leavingEdges = null
-		incomingEdges = null
+		leavingEdges = new ArrayList()
 		name = null
 	}
 	
@@ -50,12 +47,7 @@ class GraphNode {
 		leavingEdges.add(e)
 	}
 	
-	def addIncomingEdge(e : GraphEdge){
-		incomingEdges.add(e)
+	def addWall(w:Wall){
+		staticObject.add(w)
 	}
-	
-	def printProperty(){
-		System.out.println("id :"+id)
-	}
-	
 }
