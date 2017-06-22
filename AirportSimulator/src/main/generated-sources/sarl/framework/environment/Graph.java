@@ -39,16 +39,20 @@ public class Graph {
   
   public void addAgent(final AgentBody agent) {
     Shape2f<?> shape = agent.getShape();
+    boolean added = false;
     for (final GraphNode node : this.nodeList) {
       boolean _intersects = node.getSurface().intersects(shape);
       if (_intersects) {
         node.addAgent(agent);
+        added = true;
       }
     }
-    for (final GraphEdge edge : this.edgeList) {
-      boolean _intersects_1 = edge.getSurface().intersects(shape);
-      if (_intersects_1) {
-        edge.addAgent(agent);
+    if ((!added)) {
+      for (final GraphEdge edge : this.edgeList) {
+        boolean _intersects_1 = edge.getSurface().intersects(shape);
+        if (_intersects_1) {
+          edge.addAgent(agent);
+        }
       }
     }
   }

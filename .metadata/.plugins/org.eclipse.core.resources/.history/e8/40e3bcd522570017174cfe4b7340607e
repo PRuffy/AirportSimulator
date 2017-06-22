@@ -29,7 +29,7 @@ class Graph {
 	
 	def addAgent(^agent : AgentBody){
 		var shape = ^agent.getShape()
-		var added = false
+		var added : Boolean
 		for (node as GraphNode : nodeList){
 			if(node.surface.intersects(shape)){
 				node.addAgent(^agent)
@@ -37,14 +37,11 @@ class Graph {
 			}
 		}
 		
-		if (!added) {
-			for (edge as GraphEdge : edgeList) {
-				if (edge.surface.intersects(shape)) {
-					edge.addAgent(^agent)
-				}
+		for (edge as GraphEdge : edgeList){
+			if(edge.surface.intersects(shape)){
+				edge.addAgent(^agent)
 			}
 		}
-		
 	}
 	
 	def setEdgeAndNode(edgeId : String, departureNodeId : String, arrivingNodeId : String){
