@@ -1,0 +1,30 @@
+/** 
+ * 
+ */
+package framework
+
+import framework.environment.QuadTree
+import framework.environment.Graph
+import framework.environment.SituatedObject
+import framework.math.Point2f
+import framework.math.Rectangle2f
+import framework.environment.WorldModel
+
+/** 
+ * @author stay
+ * 
+ */
+class MainProgram {
+	static val WORLD_SIZE_X = 200f
+	static val WORLD_SIZE_Y = 200f
+	static val filename = "res/graphInfo.xml"
+	
+	static def main (argv : String*){
+		var environment = new WorldModel(WORLD_SIZE_X, WORLD_SIZE_Y, filename)
+		var gui = new GUI(WORLD_SIZE_X, WORLD_SIZE_Y, environment.timeManager)
+		
+		
+		System.out.println("fin")
+	}
+	
+}

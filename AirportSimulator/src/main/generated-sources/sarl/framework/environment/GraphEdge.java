@@ -1,5 +1,6 @@
 package framework.environment;
 
+import framework.environment.AgentBody;
 import framework.environment.GraphNode;
 import framework.environment.Wall;
 import framework.math.Point2f;
@@ -30,6 +31,8 @@ public class GraphEdge {
   
   private String name;
   
+  private ArrayList<AgentBody> agentObject;
+  
   public GraphEdge() {
     this.departureNode = null;
     this.arrivalNode = null;
@@ -37,6 +40,8 @@ public class GraphEdge {
     this.name = null;
     ArrayList<Wall> _arrayList = new ArrayList<Wall>();
     this.staticObject = _arrayList;
+    ArrayList<AgentBody> _arrayList_1 = new ArrayList<AgentBody>();
+    this.agentObject = _arrayList_1;
   }
   
   public String setId(final String id) {
@@ -50,6 +55,14 @@ public class GraphEdge {
   public Rectangle2f defineSurface(final Point2f p1, final Point2f p2) {
     Rectangle2f _rectangle2f = new Rectangle2f(p1, p2);
     return this.surface = _rectangle2f;
+  }
+  
+  public boolean addAgent(final AgentBody agent) {
+    return this.agentObject.add(agent);
+  }
+  
+  public boolean removeAgent(final AgentBody agent) {
+    return this.agentObject.remove(agent);
   }
   
   public GraphNode addDepartureNode(final GraphNode n) {
@@ -67,6 +80,11 @@ public class GraphEdge {
   
   public boolean addWall(final Wall w) {
     return this.staticObject.add(w);
+  }
+  
+  @Pure
+  public Rectangle2f getSurface() {
+    return this.surface;
   }
   
   @Override

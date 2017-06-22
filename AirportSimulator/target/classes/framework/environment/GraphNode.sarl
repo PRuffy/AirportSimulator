@@ -16,6 +16,7 @@ class GraphNode {
 	var leavingEdges : ArrayList<GraphEdge>
 	var surface : Rectangle2f
 	var staticObject : ArrayList<Wall>
+	var agentObject : ArrayList<AgentBody>
 	var id : String
 	var name : String
 	
@@ -25,6 +26,15 @@ class GraphNode {
 		surface = null
 		leavingEdges = new ArrayList()
 		name = null
+		agentObject = new ArrayList()
+	}
+	
+	def addAgent(^agent : AgentBody){
+		agentObject.add(^agent)
+	}
+	
+	def removeAgent(^agent : AgentBody){
+		agentObject.remove(^agent)
 	}
 	
 	def setId(id: String){
@@ -49,5 +59,9 @@ class GraphNode {
 	
 	def addWall(w:Wall){
 		staticObject.add(w)
+	}
+	
+	def getSurface():Rectangle2f{
+		this.surface
 	}
 }

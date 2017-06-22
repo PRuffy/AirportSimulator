@@ -88,10 +88,10 @@ abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGUI {
 	 * @param frameIcon
 	 * @param timeManager
 	 */
-	new(title : String, worldWidth : float, worldHeight : float, frameIcon : URL, timeManager : TimeManager) {
+	new(title : String, worldWidth : float, worldHeight : float, timeManager : TimeManager) {
 		this.title = title
-		var icon = new ImageIcon(frameIcon)
-		this.iconImage = icon.image
+		/*var icon = new ImageIcon(frameIcon)
+		this.iconImage = icon.image*/
 		var content = this.contentPane
 
 		content.layout = new BorderLayout

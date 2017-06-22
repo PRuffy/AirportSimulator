@@ -1,8 +1,10 @@
 package framework.environment;
 
 import com.google.common.base.Objects;
+import framework.environment.AgentBody;
 import framework.environment.GraphEdge;
 import framework.environment.GraphNode;
+import framework.math.Shape2f;
 import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
@@ -33,6 +35,22 @@ public class Graph {
   
   public boolean addEdge(final GraphEdge edge) {
     return this.edgeList.add(edge);
+  }
+  
+  public void addAgent(final AgentBody agent) {
+    Shape2f<?> shape = agent.getShape();
+    for (final GraphNode node : this.nodeList) {
+      boolean _intersects = node.getSurface().intersects(shape);
+      if (_intersects) {
+        node.addAgent(agent);
+      }
+    }
+    for (final GraphEdge edge : this.edgeList) {
+      boolean _intersects_1 = edge.getSurface().intersects(shape);
+      if (_intersects_1) {
+        edge.addAgent(agent);
+      }
+    }
   }
   
   public boolean setEdgeAndNode(final String edgeId, final String departureNodeId, final String arrivingNodeId) {

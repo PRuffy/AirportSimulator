@@ -1,0 +1,64 @@
+/** 
+ * 
+ */
+package framework.environment
+
+import java.util.ArrayList
+
+/** 
+ * @author stay
+ * 
+ */
+class Graph {
+	var nodeList : ArrayList<GraphNode>
+	var edgeList : ArrayList<GraphEdge>
+	
+
+	new(){
+		nodeList = new ArrayList<GraphNode>
+		edgeList = new ArrayList<GraphEdge>
+	}
+	
+	def addNode(node : GraphNode){
+		nodeList.add(node)
+	}
+	
+	def addEdge(edge : GraphEdge){
+		edgeList.add(edge)
+	}
+	
+	def addAgent(^agent : AgentBody){
+		var shape = ^agent.getShape()
+		for (node as GraphNode : nodeList){
+			if(node.surface.intersects(shape)){
+				node.addAgent(^agent)
+			}
+		}
+	}
+	
+	def setEdgeAndNode(edgeId : String, departureNodeId : String, arrivingNodeId : String){
+		var node1 = new GraphNode()
+		var node2 = new GraphNode()		
+		var edge = new GraphEdge()
+	
+	
+		for(n as GraphNode : nodeList){
+			if(n.getId() == departureNodeId)
+				node1 = nodeList.get(nodeList.indexOf(n))
+
+			if (n.getId() == arrivingNodeId)
+				node2 = nodeList.get(nodeList.indexOf(n))
+		}
+		
+		for(e as GraphEdge : edgeList){
+			if(e.getId()==edgeId)
+				edge = edgeList.get(edgeList.indexOf(e))
+		}
+		
+		edge.addDepartureNode(node1)
+		edge.addArrivalNode(node2)
+		node1.addLeavingEdge(edge)
+	}
+	
+	
+}

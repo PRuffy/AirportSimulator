@@ -51,8 +51,6 @@ import java.awt.event.WindowEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Rectangle2D;
-import java.net.URL;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
@@ -112,10 +110,8 @@ public abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGU
    * @param frameIcon
    * @param timeManager
    */
-  public AbstractFrameworkGUI(final String title, final float worldWidth, final float worldHeight, final URL frameIcon, final TimeManager timeManager) {
+  public AbstractFrameworkGUI(final String title, final float worldWidth, final float worldHeight, final TimeManager timeManager) {
     this.setTitle(title);
-    ImageIcon icon = new ImageIcon(frameIcon);
-    this.setIconImage(icon.getImage());
     Container content = this.getContentPane();
     BorderLayout _borderLayout = new BorderLayout();
     content.setLayout(_borderLayout);
@@ -426,5 +422,5 @@ public abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGU
   }
   
   @SyntheticMember
-  private final static long serialVersionUID = 2180986069L;
+  private final static long serialVersionUID = -164029653L;
 }
