@@ -39,6 +39,8 @@ import javax.swing.JCheckBox
 import javax.swing.JComponent
 import javax.swing.JPanel
 import javax.swing.JSlider
+import framework.environment.WorldModelState
+import framework.environment.EnvironmentEvent
 
 /** UI for the rabbits.
  * @author St&eacute;phane GALLAND &lt;stephane.galland@utbm.fr&gt;
@@ -46,18 +48,54 @@ import javax.swing.JSlider
  */
 public class GUI extends AbstractFrameworkGUI{
 	
-	new (worldWith:float, worldHeight : float, timeManager : TimeManager){
-		super("Airport Simulator", worldWith, worldHeight, timeManager)
-	}
-	protected override isMouseCursorHidden : boolean {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
-	}
+	new (worldWidth : float, worldHeight : float, timeManager : TimeManager) {}
+
 	
 	override paintAgentBody(g2d : Graphics2D, positionOnScreen : Point2f, orientationOnScreen : Vector2f, shape : Shape, type : Serializable, name : String, positionInMas : Point2f, frustum : Shape) {
 		throw new UnsupportedOperationException("TODO: auto-generated method stub")
 	}
 	
 	override paintSituatedObject(g2d : Graphics2D, positionOnScreen : Point2f, orientationOnScreen : Vector2f, shape : Shape, type : Serializable, name : String, positionInMas : Point2f) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override setMessage(message : String) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override getMessage : String {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override getWorldWidth : float {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override getWorldHeight : float {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override getLastWorldState : WorldModelState {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override paintAxes(g : Graphics2D) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override setMouseTargetOnScreen(screenPosition : Point2f) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override environmentChanged(^event : EnvironmentEvent) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override setTerminationHandler(handler : ()=>void) {
+		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override getTerminationHandler : ()=>void {
 		throw new UnsupportedOperationException("TODO: auto-generated method stub")
 	}
 	

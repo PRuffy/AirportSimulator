@@ -20,48 +20,21 @@
  */
 package framework.gui;
 
-import framework.FrameworkLauncher;
-import framework.environment.EnvironmentEvent;
-import framework.environment.WorldModelState;
 import framework.gui.FrameworkGUI;
-import framework.gui.FrameworkMouseAdapter;
-import framework.gui.WorldModelStateProvider;
-import framework.gui.WorldPanel;
 import framework.math.Circle2f;
 import framework.math.Point2f;
 import framework.math.Rectangle2f;
 import framework.math.Shape2f;
 import framework.math.Vector2f;
-import framework.time.TimeManager;
-import framework.util.LocalizedString;
 import io.sarl.lang.annotation.SarlElementType;
 import io.sarl.lang.annotation.SarlSpecification;
 import io.sarl.lang.annotation.SyntheticMember;
-import java.awt.BorderLayout;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.GridLayout;
+import java.awt.GraphicsConfiguration;
 import java.awt.Shape;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import java.awt.geom.Ellipse2D;
-import java.awt.geom.GeneralPath;
 import java.awt.geom.Rectangle2D;
-import javax.swing.JButton;
-import javax.swing.JComponent;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSlider;
-import javax.swing.WindowConstants;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-import org.eclipse.xtext.xbase.lib.Pure;
 
 /**
  * Abstract implementation of a GUI for the agent framework.
@@ -73,203 +46,6 @@ import org.eclipse.xtext.xbase.lib.Pure;
 @SarlElementType(8)
 @SuppressWarnings("all")
 public abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGUI {
-  private final static int WAITING_FACTOR = 2;
-  
-  private final static int WAITING_MIN = 0;
-  
-  private final static int WAITING_MAX = 20;
-  
-  private final float worldWidth;
-  
-  private final float worldHeight;
-  
-  private final TimeManager timeManager;
-  
-  private WorldModelState lastState;
-  
-  private WorldModelStateProvider environment;
-  
-  private final JScrollPane scroll;
-  
-  private final JLabel messageBox;
-  
-  private final JSlider speedSlider;
-  
-  private static int time2slider(final float delay) {
-    return ((int) ((AbstractFrameworkGUI.WAITING_MAX - AbstractFrameworkGUI.WAITING_MIN) - (delay / AbstractFrameworkGUI.WAITING_FACTOR)));
-  }
-  
-  private static float slider2time(final int value) {
-    return (((AbstractFrameworkGUI.WAITING_MAX - AbstractFrameworkGUI.WAITING_MIN) - value) * AbstractFrameworkGUI.WAITING_FACTOR);
-  }
-  
-  /**
-   * @param title
-   * @param worldWidth
-   * @param worldHeight
-   * @param frameIcon
-   * @param timeManager
-   */
-  public AbstractFrameworkGUI(final String title, final float worldWidth, final float worldHeight, final TimeManager timeManager) {
-    this.setTitle(title);
-    Container content = this.getContentPane();
-    BorderLayout _borderLayout = new BorderLayout();
-    content.setLayout(_borderLayout);
-    boolean _isMouseCursorHidden = this.isMouseCursorHidden();
-    WorldPanel world = new WorldPanel(this, _isMouseCursorHidden);
-    this.worldWidth = worldWidth;
-    this.worldHeight = worldHeight;
-    this.timeManager = timeManager;
-    JScrollPane _jScrollPane = new JScrollPane(world);
-    this.scroll = _jScrollPane;
-    content.add(BorderLayout.CENTER, this.scroll);
-    String _string = LocalizedString.getString(this.getClass(), "QUIT");
-    JButton closeBt = new JButton(_string);
-    final ActionListener _function = (ActionEvent it) -> {
-      FrameworkLauncher.stopSimulation();
-    };
-    closeBt.addActionListener(_function);
-    JSlider _jSlider = new JSlider(JSlider.HORIZONTAL);
-    this.speedSlider = _jSlider;
-    this.speedSlider.setToolTipText(LocalizedString.getString(this.getClass(), "SLIDER_LABEL"));
-    this.speedSlider.setMinimum(AbstractFrameworkGUI.WAITING_MIN);
-    this.speedSlider.setMaximum(AbstractFrameworkGUI.WAITING_MAX);
-    this.speedSlider.setValue(AbstractFrameworkGUI.time2slider(timeManager.getSimulationDelay()));
-    final ChangeListener _function_1 = (ChangeEvent it) -> {
-      this.timeManager.setSimulationDelay(AbstractFrameworkGUI.slider2time(this.speedSlider.getValue()));
-    };
-    this.speedSlider.addChangeListener(_function_1);
-    JLabel _jLabel = new JLabel();
-    this.messageBox = _jLabel;
-    content.add(BorderLayout.SOUTH, this.createBottomPanel(this.speedSlider, closeBt, this.messageBox));
-    Dimension _dimension = new Dimension(((int) worldWidth), ((int) worldHeight));
-    world.setPreferredSize(_dimension);
-    this.addWindowListener(new WindowAdapter() {
-      @Override
-      public void windowClosing(final WindowEvent e) {
-        FrameworkLauncher.stopSimulation();
-      }
-    });
-    FrameworkMouseAdapter mouseAdapter = new FrameworkMouseAdapter(this);
-    world.addMouseMotionListener(mouseAdapter);
-    world.addMouseListener(mouseAdapter);
-    this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-    this.pack();
-    Dimension d = this.getSize();
-    this.setLocation(((-d.width) / 2), ((-d.height) / 2));
-    this.setLocationRelativeTo(null);
-  }
-  
-  /**
-   * Replies if the mouse cursor must be hidden or not.
-   * 
-   * @return <code>true</code> to hide the cursor, <code>false</code> to show.
-   */
-  protected abstract boolean isMouseCursorHidden();
-  
-  @Override
-  public void setMessage(final String message) {
-    this.messageBox.setText(message);
-  }
-  
-  @Override
-  @Pure
-  public String getMessage() {
-    return this.messageBox.getText();
-  }
-  
-  /**
-   * Create the bottom panel.
-   * 
-   * @param speedSlider the slider for changing the simulation speed.
-   * @param closeButton the close button.
-   * @param messageBox the box for messages.
-   * @return the bottom panel.
-   */
-  protected JComponent createBottomPanel(final JSlider speedSlider, final JComponent closeButton, final JComponent messageBox) {
-    JPanel bottomPanel = new JPanel();
-    GridLayout _gridLayout = new GridLayout(3, 1);
-    bottomPanel.setLayout(_gridLayout);
-    bottomPanel.add(speedSlider);
-    bottomPanel.add(closeButton);
-    bottomPanel.add(messageBox);
-    return bottomPanel;
-  }
-  
-  @Override
-  public void environmentChanged(final EnvironmentEvent event) {
-    synchronized (this.getTreeLock()) {
-      if ((this.environment == null)) {
-        this.environment = event.getStateProvider();
-      }
-      this.lastState = this.environment.getState();
-      this.repaint();
-    }
-  }
-  
-  @Override
-  public void setMouseTargetOnScreen(final Point2f screenPosition) {
-    synchronized (this.getTreeLock()) {
-      Point2f masPosition = this.screen2mas(screenPosition);
-      if ((this.environment != null)) {
-        this.environment.setMouseTarget(masPosition);
-      }
-      String _xifexpression = null;
-      if ((masPosition == null)) {
-        _xifexpression = null;
-      } else {
-        _xifexpression = LocalizedString.getString(this.getClass(), "TARGET_POSITION", Float.valueOf(masPosition.getX()), Float.valueOf(masPosition.getY()));
-      }
-      this.setMessage(_xifexpression);
-    }
-  }
-  
-  /**
-   * @param masPosition the position of the target in the MAS
-   */
-  protected void setMouseTargetInMAS(final Point2f masPosition) {
-    synchronized (this.getTreeLock()) {
-      if ((this.environment != null)) {
-        this.environment.setMouseTarget(masPosition);
-      }
-      String _xifexpression = null;
-      if ((masPosition == null)) {
-        _xifexpression = null;
-      } else {
-        _xifexpression = LocalizedString.getString(this.getClass(), "TARGET_POSITION", Float.valueOf(masPosition.getX()), Float.valueOf(masPosition.getY()));
-      }
-      this.setMessage(_xifexpression);
-    }
-  }
-  
-  @Override
-  @Pure
-  public float getWorldWidth() {
-    return this.worldWidth;
-  }
-  
-  /**
-   * Replies the height of the world.
-   * 
-   * @return the height.
-   */
-  @Override
-  @Pure
-  public float getWorldHeight() {
-    return this.worldHeight;
-  }
-  
-  /**
-   * Replies the last environment state.
-   * 
-   * @return the last environment state.
-   */
-  @Override
-  @Pure
-  public WorldModelState getLastWorldState() {
-    return this.lastState;
-  }
-  
   /**
    * Convert the coordinates in the MAS into the equivalent coordinates on the screen.
    * 
@@ -283,8 +59,9 @@ public abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGU
       return null;
     }
     float _x = p.getX();
+    float _worldHeight = this.getWorldHeight();
     float _y = p.getY();
-    float _minus = (this.worldHeight - _y);
+    float _minus = (_worldHeight - _y);
     return new Point2f(_x, _minus);
   }
   
@@ -328,8 +105,9 @@ public abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGU
       return null;
     }
     float _x = point.getX();
+    float _worldHeight = this.getWorldHeight();
     float _y = point.getY();
-    float _minus = (this.worldHeight - _y);
+    float _minus = (_worldHeight - _y);
     return new Point2f(_x, _minus);
   }
   
@@ -373,54 +151,26 @@ public abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGU
   public void paintWorld(final Graphics2D g2d) {
   }
   
-  @Override
-  public void paintAxes(final Graphics2D g2d) {
-    Dimension dim = this.scroll.getViewport().getViewSize();
-    g2d.setColor(g2d.getBackground().darker());
-    GeneralPath p = new GeneralPath();
-    p.moveTo(19, (((float) dim.height) - 5));
-    p.lineTo(22, (((float) dim.height) - 2));
-    p.lineTo(2, (((float) dim.height) - 2));
-    p.lineTo(2, (((float) dim.height) - 22));
-    p.lineTo(5, (((float) dim.height) - 19));
-    g2d.draw(p);
-    Font oldFont = g2d.getFont();
-    Font f = oldFont.deriveFont(6);
-    g2d.setFont(f);
-    g2d.drawString("x", 24, (((float) dim.height) - 1));
-    g2d.drawString("y", 1, (((float) dim.height) - 25));
-    g2d.setFont(oldFont);
-  }
-  
-  @Override
-  @Pure
   @SyntheticMember
-  public boolean equals(final Object obj) {
-    if (this == obj)
-      return true;
-    if (obj == null)
-      return false;
-    if (getClass() != obj.getClass())
-      return false;
-    AbstractFrameworkGUI other = (AbstractFrameworkGUI) obj;
-    if (Float.floatToIntBits(other.worldWidth) != Float.floatToIntBits(this.worldWidth))
-      return false;
-    if (Float.floatToIntBits(other.worldHeight) != Float.floatToIntBits(this.worldHeight))
-      return false;
-    return super.equals(obj);
-  }
-  
-  @Override
-  @Pure
-  @SyntheticMember
-  public int hashCode() {
-    int result = super.hashCode();
-    final int prime = 31;
-    result = prime * result + Float.floatToIntBits(this.worldWidth);
-    result = prime * result + Float.floatToIntBits(this.worldHeight);
-    return result;
+  public AbstractFrameworkGUI() {
+    super();
   }
   
   @SyntheticMember
-  private final static long serialVersionUID = -164029653L;
+  public AbstractFrameworkGUI(final GraphicsConfiguration gc) {
+    super(gc);
+  }
+  
+  @SyntheticMember
+  public AbstractFrameworkGUI(final String title) {
+    super(title);
+  }
+  
+  @SyntheticMember
+  public AbstractFrameworkGUI(final String title, final GraphicsConfiguration gc) {
+    super(title, gc);
+  }
+  
+  @SyntheticMember
+  private final static long serialVersionUID = -2053347506L;
 }

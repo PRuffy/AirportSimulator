@@ -30,6 +30,7 @@ import io.sarl.lang.annotation.SarlSpecification;
 import java.awt.Graphics2D;
 import java.awt.Shape;
 import java.io.Serializable;
+import org.eclipse.xtext.xbase.lib.Procedures.Procedure0;
 
 /**
  * GUI for the simulation framework.
@@ -171,4 +172,18 @@ public interface FrameworkGUI extends EnvironmentListener {
    * @param screenPosition the position of the target on the screen
    */
   public abstract void setMouseTargetOnScreen(final Point2f screenPosition);
+  
+  /**
+   * Change the handler for termination queried with the UI.
+   * 
+   * @param handler the handler
+   */
+  public abstract void setTerminationHandler(final Procedure0 handler);
+  
+  /**
+   * Replies the handler for termination queried with the UI.
+   * 
+   * @return the handler
+   */
+  public abstract Procedure0 getTerminationHandler();
 }

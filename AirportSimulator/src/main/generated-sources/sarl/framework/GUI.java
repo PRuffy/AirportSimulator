@@ -20,6 +20,8 @@
  */
 package framework;
 
+import framework.environment.EnvironmentEvent;
+import framework.environment.WorldModelState;
 import framework.gui.AbstractFrameworkGUI;
 import framework.math.Point2f;
 import framework.math.Vector2f;
@@ -30,6 +32,7 @@ import io.sarl.lang.annotation.SyntheticMember;
 import java.awt.Graphics2D;
 import java.awt.Shape;
 import java.io.Serializable;
+import org.eclipse.xtext.xbase.lib.Procedures.Procedure0;
 import org.eclipse.xtext.xbase.lib.Pure;
 
 /**
@@ -41,14 +44,7 @@ import org.eclipse.xtext.xbase.lib.Pure;
 @SarlElementType(8)
 @SuppressWarnings("all")
 public class GUI extends AbstractFrameworkGUI {
-  public GUI(final float worldWith, final float worldHeight, final TimeManager timeManager) {
-    super("Airport Simulator", worldWith, worldHeight, timeManager);
-  }
-  
-  @Override
-  @Pure
-  protected boolean isMouseCursorHidden() {
-    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  public GUI(final float worldWidth, final float worldHeight, final TimeManager timeManager) {
   }
   
   @Override
@@ -61,6 +57,61 @@ public class GUI extends AbstractFrameworkGUI {
     throw new UnsupportedOperationException("TODO: auto-generated method stub");
   }
   
+  @Override
+  public void setMessage(final String message) {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
+  @Override
+  @Pure
+  public String getMessage() {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
+  @Override
+  @Pure
+  public float getWorldWidth() {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
+  @Override
+  @Pure
+  public float getWorldHeight() {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
+  @Override
+  @Pure
+  public WorldModelState getLastWorldState() {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
+  @Override
+  public void paintAxes(final Graphics2D g) {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
+  @Override
+  public void setMouseTargetOnScreen(final Point2f screenPosition) {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
+  @Override
+  public void environmentChanged(final EnvironmentEvent event) {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
+  @Override
+  public void setTerminationHandler(final Procedure0 handler) {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
+  @Override
+  @Pure
+  public Procedure0 getTerminationHandler() {
+    throw new UnsupportedOperationException("TODO: auto-generated method stub");
+  }
+  
   @SyntheticMember
-  private final static long serialVersionUID = 3034679230L;
+  private final static long serialVersionUID = -1236636640L;
 }
