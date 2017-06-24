@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="io.sarl.eclipse.debug.LaunchConfigType">
-<stringAttribute key="io.sarl.eclipse.AGENT_NAME" value="framework.MainProgram"/>
+<stringAttribute key="io.sarl.eclipse.AGENT_NAME" value="framework.AirportBoot"/>
 <booleanAttribute key="io.sarl.eclipse.EMBEDDED_SRE" value="false"/>
 <booleanAttribute key="io.sarl.eclipse.ENABLE_ASSERTIONS_DEBUG" value="true"/>
 <booleanAttribute key="io.sarl.eclipse.ENABLE_ASSERTIONS_RUN" value="false"/>

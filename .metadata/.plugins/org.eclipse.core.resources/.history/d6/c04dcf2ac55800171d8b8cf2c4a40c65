@@ -1,0 +1,41 @@
+/** 
+ * 
+ */
+package framework
+
+import framework.environment.WorldModel
+import framework.environment.AgentBody
+import io.sarl.lang.core.Agent
+import framework.util.SpawnMapping
+import framework.environment.Borne
+import framework.environment.Screener
+import framework.^agent.TempAgent
+import framework.environment.Body_Phone
+import framework.environment.Body_Walker
+import framework.environment.DynamicType
+import java.util.List
+
+/** 
+ * @author stay
+ * 
+ */
+
+
+
+agent SpatialTreeBoot extends FrameworkLauncher {
+	final val WORLD_SIZE_X = 200f
+	final val WORLD_SIZE_Y = 200f
+	final val filename = "res/graphInfo.xml"
+
+	override initializeSimulation(parameters : List<Object>) : boolean {
+
+			var environment = new WorldModel(WORLD_SIZE_X, WORLD_SIZE_Y, filename)
+			var gui = new GUI(WORLD_SIZE_X, WORLD_SIZE_Y, environment.timeManager)
+			var behaviour = DynamicType.STEERING
+			return initializeSimulation(environment, behaviour, gui, parameters)[typeof(TempAgent)]
+		} else {
+			return false
+		}
+	}
+
+}

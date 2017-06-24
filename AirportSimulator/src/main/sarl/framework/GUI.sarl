@@ -41,6 +41,7 @@ import javax.swing.JPanel
 import javax.swing.JSlider
 import framework.environment.WorldModelState
 import framework.environment.EnvironmentEvent
+import javax.swing.JFrame
 
 /** UI for the rabbits.
  * @author St&eacute;phane GALLAND &lt;stephane.galland@utbm.fr&gt;
@@ -48,7 +49,11 @@ import framework.environment.EnvironmentEvent
  */
 public class GUI extends AbstractFrameworkGUI{
 	
-	new (worldWidth : float, worldHeight : float, timeManager : TimeManager) {}
+	new (worldWidth : float, worldHeight : float, timeManager : TimeManager) {
+		
+		var rootPane = createRootPane()
+		frameInit()
+	}
 
 	
 	override paintAgentBody(g2d : Graphics2D, positionOnScreen : Point2f, orientationOnScreen : Vector2f, shape : Shape, type : Serializable, name : String, positionInMas : Point2f, frustum : Shape) {
@@ -87,16 +92,6 @@ public class GUI extends AbstractFrameworkGUI{
 		throw new UnsupportedOperationException("TODO: auto-generated method stub")
 	}
 	
-	override environmentChanged(^event : EnvironmentEvent) {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
-	}
 	
-	override setTerminationHandler(handler : ()=>void) {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
-	}
-	
-	override getTerminationHandler : ()=>void {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
-	}
 	
 }

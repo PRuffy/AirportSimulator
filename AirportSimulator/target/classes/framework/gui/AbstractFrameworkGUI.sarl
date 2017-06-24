@@ -50,6 +50,7 @@ import javax.swing.JPanel
 import javax.swing.JScrollPane
 import javax.swing.JSlider
 import javax.swing.WindowConstants
+import javax.swing.JRootPane
 
 /** Abstract implementation of a GUI for the agent framework.
  *
@@ -57,8 +58,84 @@ import javax.swing.WindowConstants
  * @version $Name$ $Revision$ $Date$
  */
 abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGUI {
+	
+	val worldWidth : float
+	val worldHeight : float
+	val timeManager : TimeManager
+	
+	var terminationHandler : ()=>void
+	var environment : WorldModelStateProvider
+	var lastState : WorldModelState
+	
+	var scroll : JScrollPane
+	/** 
+	 * @param title
+	 * @param worldWidth
+	 * @param worldHeight
+	 * @param frameIcon
+	 * @param timeManager
+	 */
+	new(title : String, worldWidth : float, worldHeight : float, timeManager : TimeManager) {
+		this.title = title
+		var content = this.contentPane
 
+		content.layout = new BorderLayout
 
+		var world = new WorldPanel(this, isMouseCursorHidden)
+		this.worldWidth = worldWidth
+		this.worldHeight = worldHeight
+		this.timeManager = timeManager
+
+		this.scroll = new JScrollPane(world)
+		content.add(BorderLayout::CENTER, scroll)
+
+		var closeBt = new JButton("Quit")
+		closeBt.addActionListener [
+			terminationHandler.apply
+		]
+
+		world.preferredSize = new Dimension(worldWidth as int, worldHeight as int)
+
+		addWindowListener(new WindowClosingHandler(this))
+
+		var mouseAdapter = new FrameworkMouseAdapter(this)
+		world.addMouseMotionListener(mouseAdapter)
+		world.addMouseListener(mouseAdapter)
+
+		this.defaultCloseOperation = WindowConstants::DISPOSE_ON_CLOSE
+
+		pack
+
+		var d = getSize
+		setLocation(-d.width / 2, -d.height / 2)
+		this.locationRelativeTo = null
+	}
+
+	override environmentChanged(^event : EnvironmentEvent) {
+		synchronized (treeLock) {
+			if (this.environment === null) {
+				this.environment = ^event.stateProvider
+			}
+			this.lastState = this.environment.state
+			repaint
+		}
+	}
+	
+	/** Replies the last environment state.
+	 * 
+	 * @return the last environment state.
+	 */
+	override getLastWorldState : WorldModelState {
+		this.lastState
+	}
+	
+	def setTerminationHandler(handler : ()=>void) {
+		this.terminationHandler = handler
+	}
+
+	def getTerminationHandler() : ()=>void {
+		this.terminationHandler
+	}
 
 	/** Convert the coordinates in the MAS into the equivalent coordinates on the screen.
 	 *
@@ -83,6 +160,7 @@ abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGUI {
 		}
 		return new Vector2f(p.x, -p.y, true)
 	}
+
 
 	/** Convert the size in the MAS into the equivalent size on the screen.
 	 *
@@ -138,6 +216,8 @@ abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGUI {
 		throw new IllegalArgumentException
 	}
 
+	protected abstract def isMouseCursorHidden : boolean
+	
 	override paintWorld(g2d : Graphics2D) {
 		//
 	}

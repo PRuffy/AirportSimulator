@@ -13,6 +13,7 @@ import framework.^agent.TempAgent
 import framework.environment.Body_Phone
 import framework.environment.Body_Walker
 import framework.environment.DynamicType
+import java.util.List
 
 /** 
  * @author stay
@@ -21,7 +22,7 @@ import framework.environment.DynamicType
 
 
 
-agent SpatialTreeBoot extends FrameworkLauncher {
+agent AirportBoot extends FrameworkLauncher {
 	final val WORLD_SIZE_X = 200f
 	final val WORLD_SIZE_Y = 200f
 	final val filename = "res/graphInfo.xml"
@@ -31,10 +32,7 @@ agent SpatialTreeBoot extends FrameworkLauncher {
 			var environment = new WorldModel(WORLD_SIZE_X, WORLD_SIZE_Y, filename)
 			var gui = new GUI(WORLD_SIZE_X, WORLD_SIZE_Y, environment.timeManager)
 			var behaviour = DynamicType.STEERING
-			return initializeSimulation(environment, behaviour, gui, parameters)[typeof(Rabbit)]
-		} else {
-			return false
-		}
+			return initializeSimulation(environment, behaviour, gui, parameters)[typeof(TempAgent)]
 	}
 
 }
