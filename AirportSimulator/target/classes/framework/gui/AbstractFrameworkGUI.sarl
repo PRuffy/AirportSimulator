@@ -222,4 +222,15 @@ abstract class AbstractFrameworkGUI extends JFrame implements FrameworkGUI {
 		//
 	}
 
+	override getWorldWidth : float {
+		this.worldWidth
+	}
+	/** Replies the height of the world.
+	 * 
+	 * @return the height.
+	 */
+	override getWorldHeight : float {
+		this.worldHeight
+	}
+
 }

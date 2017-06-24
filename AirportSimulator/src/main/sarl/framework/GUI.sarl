@@ -50,9 +50,7 @@ import javax.swing.JFrame
 public class GUI extends AbstractFrameworkGUI{
 	
 	new (worldWidth : float, worldHeight : float, timeManager : TimeManager) {
-		
-		var rootPane = createRootPane()
-		frameInit()
+		super("AirportSimulator", worldWitdth, worldHeight, timeManager)
 	}
 
 	
@@ -69,18 +67,6 @@ public class GUI extends AbstractFrameworkGUI{
 	}
 	
 	override getMessage : String {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
-	}
-	
-	override getWorldWidth : float {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
-	}
-	
-	override getWorldHeight : float {
-		throw new UnsupportedOperationException("TODO: auto-generated method stub")
-	}
-	
-	override getLastWorldState : WorldModelState {
 		throw new UnsupportedOperationException("TODO: auto-generated method stub")
 	}
 	
